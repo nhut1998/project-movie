@@ -1,0 +1,208 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+.navbar-brand img{
+    display: block;
+    width: 100%;    
+    background-color: rgb(0, 0, 0);
+    ;
+}
+.navbar-brand{
+    width: 70px;
+    
+}
+ .header{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 15vh;
+    top:0;
+    margin-top: 0px;
+    position: relative;
+    z-index: 2001;
+    @include ipadpro{
+        height: 8vh;
+    }
+    @include ipad{
+        height: 10vh;
+    }
+    @include xs{
+        height: 12vh;
+    }
+    .nav-header{
+        position: relative;
+        
+    }
+   
+
+ }
+ .navbar-hover{
+   @include ipad{
+    box-shadow: 3px 3px 3px $pink_color inset, 3px 3px 3px $pink_color;
+   }
+    .nav_down{
+        position: relative;
+        @include ipad{
+            text-align: center;
+            background-color: #000;
+            height: 50px;
+            border-top: 3px solid $pink_color;
+            display: flex;
+            align-items: center;
+        }
+        .person{
+            display: flex;
+            align-items: center;
+            @include ipad{
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .user_icon{
+                font-size: 20px;
+                
+            }
+            .icon_avt{
+                color: $pink_color;
+            }
+        }
+        @include ipad{
+           margin-left: 5px;
+       }
+ }
+ 
+    .items_in, .items_out{
+        background-color: $white_color;
+        height: 0vh;
+        width: 150px;
+        position: absolute;
+        right: -13%;
+        top: 100%;
+        z-index: 2003;
+        opacity: 0;
+        transition: all 0.5s;
+        border-radius: 7px;
+        @include ipad{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .user_btn {
+            text-align: center;
+            button{
+                background-color: $pink_color;
+                width:110px;
+                 min-height: 42px;
+                 border: unset;
+                border-radius: 10px;
+                margin-top: 10px;
+               }
+
+        }
+       
+        
+    }
+    .triangle{
+        position: absolute;
+        top: 75%;
+        right: 50%;
+        transform: translateX(-90%);
+        width: 0;
+         height: 0;
+        border-left: 9px solid transparent;
+        border-right: 9px solid transparent;
+       border-bottom: 12px solid $white_color;
+       opacity: 0;
+       transition: all 0.5s;
+       @include ipad{
+           left: 50%;
+
+       }
+    }
+    
+ }
+ .nav_down:hover > .items_in{
+    opacity: 1;
+    height: 27.5vh;
+    @include ipadpro{
+        height: 15vh;
+    }
+    @include xs{
+        height: 21vh;
+    }
+}
+ .nav_down:hover > .items_out{
+    opacity: 1;
+    height: 17vh;
+    @include ipadpro{
+        height: 9vh;
+    }
+    @include xs{
+        height: 14vh;
+    }
+   
+}
+ .nav_down:hover > .triangle{
+    opacity: 1;
+}
+a:hover{
+    color: $pink_color !important;
+    text-decoration: unset !important;
+}
+
+.nav-item{
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    font-size: 20px;
+    @include ipad{
+        display: unset;
+        text-align: center;
+        box-shadow: 3px 3px 3px $pink_color inset, 3px 3px 3px $pink_color;
+        height: 50px;
+        margin-left: unset;
+        padding-top: 13px;
+    }
+}
+
+.nav_hover{
+ position: relative;   
+}
+.nav_hover::after{
+    content: '';
+    display: block;
+    width:0;
+    height: 3px;
+    background-color: $pink_color;
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    transition: all 0.5s;
+    @include ipad{
+        content: unset;
+    }
+    
+}
+.nav_hover:hover::after{
+    width: 100%;
+    box-shadow: 0px 0px 20px $white_color;
+    
+}
+
+.navbar-home{
+    display: inline-block;
+    color: #fff;
+}
+.navbar-nav .nav-link {
+    color:rgb(255, 255, 255)!important   
+}
+.navbar-toggler .navbar-toggler-icon{
+    background-color:rgb(255, 255, 255)!important 
+}
+
+.navbar-collapse{
+    .navbar-nav{
+        background-color: #000;
+        
+    }
+}
+
+

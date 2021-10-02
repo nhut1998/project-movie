@@ -1,0 +1,1 @@
+export const AD_MOVIE_LIST = '[admin]:AD_MOVIE_LIST'

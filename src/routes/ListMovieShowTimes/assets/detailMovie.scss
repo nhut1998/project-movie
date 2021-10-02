@@ -1,0 +1,455 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+/* width */ ::-webkit-scrollbar {
+     width: 10px; 
+     height: 10px;
+    } 
+/* Track */ ::-webkit-scrollbar-track { 
+    box-shadow: inset 0 0 5px grey;
+     border-radius: 10px; 
+    }
+/* Handle */ ::-webkit-scrollbar-thumb {
+            background: rgb(156, 154, 154);
+             border-radius: 10px; } 
+ /* Handle on hover */ ::-webkit-scrollbar-thumb:hover {
+ background: #a5a2a2; }
+.detail{
+    background-image:url('../../../assets/img/ct.jfif') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    padding: 60px 250px;
+    @include ipadpro{
+        padding: 60px 100px;
+    }
+    @include ipad{
+        padding: 60px 50px;
+    }
+    @include xs{
+        padding: 50px 20px;
+    }
+    .detail_item{
+        position: relative;
+        z-index: 2;
+        @include xs{
+            text-align:center;
+        }
+        .booked_detail{
+            width: 500px;
+            height: 50vh;
+            margin-top: 15px;
+            @include ipadpro{
+                height: 40vh;
+            }
+            @include xs{
+                height: 50vh;
+                text-align: center;
+               padding-left: 65px;
+            }
+            .item_picture img{
+                display: block;
+                width: 100%;
+                height: 42vh;
+                border-radius: 7px;
+                @include ipadpro{
+                height: 25vh;
+                } 
+                @include xs{
+                  height: 35vh;  
+                }
+            }
+            .item_picture{
+                width: 230px;
+                height: 42vh;
+                box-shadow: 0px 0px 6px 6px #fff;
+                border-radius: 7px;
+                @include ipadpro{
+                    height: 25vh;
+                } 
+                @include ipad{
+                    width: 200px;
+                }
+                @include xs{
+                    width: 230px;
+                   height: 35vh;
+                }
+            }
+            .item_trailer{
+                width: 230px;
+                margin-top: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                @include ipad{
+                    padding-right: 20px;
+                }
+                @include xs{
+                    width: 260px;
+                    padding-right: 30px;
+                   
+                }
+                .btn-booking{
+                    color: #fff;
+                    border: unset;
+                    border-radius: 7px;
+                    width: 90px;
+                    height: 30px;
+                    background-color: unset;
+                    box-shadow: 0px 0px 6px 6px $pink_color;
+                    @include ipadpro{
+                        width: 100px;
+                        height: 33px;
+                        font-size: 20px;
+                    }
+                    @include ipad{
+                        width: 85px;
+                        height: 33px;
+                        font-size:20px;  
+                    }
+                    @include xs{
+                        width: 100px;
+                        height: 33px;
+                       
+                    }
+                }
+                .btn-trailer{
+                    color: #fff;
+                    border: unset;
+                    border-radius: 7px;
+                    width: 90px;
+                    height: 30px;
+                    background-color: unset;
+                    box-shadow: 0px 0px 6px 6px $pink_color;
+                    @include ipadpro{
+                        width: 100px;
+                        height: 33px;
+                        font-size: 20px;
+                    }
+                    @include ipad{
+                        width: 85px;
+                        height: 33px;
+                        font-size:20px;  
+                    }
+                    @include xs{
+                        width: 100px;
+                        height: 33px;
+                       
+                    }
+                }
+            }
+            
+        }
+        .item_text{
+            text-align: justify;
+            
+            @include ipadpro{
+                text-align: left;
+            }
+            @include xs{
+             
+            }
+            h5{
+                color: $yellow_color;
+                font-weight: bold;
+                font-size: 25px;
+                @include ipadpro{
+                    font-size: 33px;
+                }
+                @include ipad{
+                    font-size: 35px;
+                }
+                @include xs{
+                    text-align: center;
+                }
+            }
+            button{
+                color: $yellow_color;
+                border: unset;
+                 border-radius: 7px;
+                 width: 120px;
+                  height: 30px;
+                background-color: unset;
+                 box-shadow: 0px 0px 6px 6px $pink_color;
+                 margin-top: 20px;
+                 margin-bottom: 20px;
+                 @include ipadpro{
+                   width: 139px;
+                   height: 33px;
+                }
+                @include xs{
+                  margin-left: 90px;
+                }
+
+            }
+            span{
+                color: #ffff;
+                @include ipadpro{
+                    font-size: 19px;
+                }
+                @include ipad{
+                    font-size: 20px;
+                }
+               
+            }
+            .text{
+                color:$pink_color;
+                font-weight: bold;
+                margin-right: 10px;
+                @include ipadpro{
+                    font-size: 20px;
+                }
+                @include ipad{
+                    font-size: 22px;
+                }
+
+                
+            }
+            .star{
+                color:  $yellow_color;
+                
+            }
+
+        }
+       
+       
+    }
+        
+    .calendar{
+         margin-top: 40px;
+         @include ipad{
+            margin-left: 20px;
+        }
+        @include xs{
+            margin-left: 0px;
+        }
+       
+        h4{
+            text-align: center;
+            font-size: 25px;
+            color: #fff;
+            font-weight: 500;
+            position: relative;
+            z-index: 3;
+            @include ipadpro{
+               font-size: 40px;
+            }
+        }
+        .theater{
+            position: relative;
+            z-index: 2;
+            background-color: #ffff;
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+            @include ipadpro{
+                min-height: 10vh;
+                margin-top: 20px;
+        
+            }
+            @include xs{
+                margin-left: 1px;
+            }
+           
+            .theater_logo{
+               border: 2px solid #FF00CC;
+                width: 100%; 
+                border-top-left-radius:10px; 
+                border-bottom-left-radius:10px;
+                @include ipadpro{
+                    min-height: 40vh;
+                }
+                .logo_item img{
+                    display: block;
+                    width: 100%;
+    
+                }
+                .logo_item{
+                    min-width: 100%;
+                    height: 15vh;
+                    border-bottom: 1px solid#FF00CC;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+                    @include ipadpro{
+                        height: 10vh;
+                    }
+             
+                    .logo_detail{
+                      max-width: 110px;
+                       max-height: 110px;
+    
+                    }
+                    .detail_system{
+                        width: 100%;
+                        h6{
+                            font-size: 18px;
+                            @include ipadpro{
+                                font-size: 25px;
+                            }
+                            @include ipad{
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+                .active_theater{
+                    background-color: #FF00CC;
+                }
+                
+            }
+            .items_date img{
+                display: block;
+                width: 100%;
+                
+                }
+                .items_date{
+                    width: 100%;
+                 
+                    .date_movie{
+                        width: 100%;
+                       
+                        .date_item{
+                            width: 540px;
+                            height: 8vh;
+                            color:rgb(0,0,0);
+                            overflow-y: auto;
+                            margin-top: 20px;
+                            @include ipadpro{
+                                height: 5vh;
+                            }
+                            @include xs{
+                            width: 300px;
+                            height: 10vh;
+                            overflow-y: auto;
+                            margin-top: 20px;
+
+                            }
+                            p:hover{
+                              color: $pink_color;
+                               transition: all .5s;
+                            }
+                            p{
+                                height: 30px;
+                                min-width: 110px;
+                                color: #686363;
+                                font-size: 25px;
+                                font-weight: 550;
+                                cursor: pointer;
+                                @include ipadpro{
+                                   font-size: 28px;
+                                   font-weight: bold;
+                                }
+                            }
+                            .act_date{
+                                color: #FF00CC;                          
+                            }                      
+                        }
+                        .system{
+                            display: flex;
+                            width: 100%;
+                            margin-top: 15px;
+                            @include ipadpro{
+                                margin-top: 10px;
+                            }
+                            .system_item{
+                                flex: 1;
+                                .system_logo{
+                                    width: 80px;
+                                    @include ipadpro{
+                                        width: 90px;
+                                        height: 90px;
+                                    }
+        
+                                }
+                                .text_digital{
+                                    border: 2px solid #FF00CC;
+                                    border-radius: 5px;
+                                    width: 85px;
+                                    text-align: center;
+                                    margin-top: 15px;
+                                    color: #000;
+                                    font-size: 14px;
+                                    @include ipadpro{
+                                        width: 90px;
+                                        height: 33px;
+                                        font-size: 18px;
+                                        border: 2px solid #FF00CC;
+                                    }
+                                }
+     
+                            }
+                            .system_name{
+                                flex: 6;
+                                @include ipadpro{
+                                   margin-left: 15px;
+                                }
+                                .text-heThong{
+                                    font-size: 25px;
+                                    color: #FF00CC;
+                                    @include ipadpro{
+                                        font-size: 30px;
+                                        font-weight: bold;
+                                    }
+                                }
+                                .text-cum{
+                                color: #000;
+                                @include ipadpro{
+                                  font-size: 25px;
+                                }
+                                }
+                            }
+                           
+                        }
+                        .dateTimes{
+                            margin-top: 10px;
+                            width: 100%;
+                            height: 45vh;
+                            @include ipadpro{
+                                min-height: 20vh;
+                            }
+                            h5{
+                                color: #000;
+                                font-size: 30px;
+                                font-weight: 500;
+                            }
+                            .dateTime_item{
+                               width: 100%;
+                                display: flex;
+                                flex-wrap: wrap;
+                                border-bottom: 1px solid #FF00CC;
+                                padding-bottom: 20px;
+                                
+                                    button{
+                                        color: #000;
+                                        width: 100px;
+                                        height: 35px;
+                                        border: none;
+                                        border-radius: 7px;
+                                        font-weight: bold;
+                                        background-color: #ffff;
+                                        box-shadow: 0 0 20px 0 #FF00CC;
+                                        margin: 10px;
+                                    }
+    
+                                
+                            }
+                        }
+                    }
+                }
+    
+    
+        }
+    }
+}
+.detail::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+}

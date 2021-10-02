@@ -1,0 +1,482 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+.bg_booking{
+    background-image:url('../../../assets/img/123.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 0px 60px;
+    @include ipadpro{
+      padding: 0px 35px;
+      height: 75vh;
+    }
+    @include ipad{
+        height: 156vh;
+    }
+    @include xs{
+        padding: 0px 10px;
+        height: 235vh;
+    }
+    .booking{
+     
+        @include ipadpro{ 
+            padding-top: 100px;
+        }
+        @include ipad{
+            padding-top: 80px;
+        }
+        @include xs{
+            padding-top: 50px;
+         
+        }
+        .listSeat{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+             @include ipadpro{
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+             }
+             @include ipad{
+                 text-align: center;
+             }
+            .screen{
+               width: 100%;
+               height: 30px;
+               background-color:  $pink_color;
+               color: $white_color;
+               text-align: center;
+               line-height:29px;
+               font-weight: bold;
+               @include ipadpro{
+
+               }
+
+            }
+            .seat_item{
+                margin-top: 40px;
+                width: 100%;
+                .seat_icon{
+                    box-shadow:  2px 3px 4px 3px $pink_color;
+                    max-width: 40px;
+                    max-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    position: relative;
+                    @include ipadpro{
+                        max-width: 36px;
+                        max-height: 36px;
+                        margin-top: 30px;
+                    }
+                    @include ipad{
+                        max-width: 38px;
+                        max-height: 38px;
+                        margin-top: 30px;
+                    }
+                    @include xs{
+                        margin-top: 10px;
+                        // width: 18px;
+                        // height: 18px;
+                        // box-shadow: unset;
+                    }
+                    .iconSeat{
+                        font-size: 40px;
+                        @include ipadpro{
+                            font-size: 35px;
+                        }
+                        @include ipad{
+                            font-size: 39px;
+                        }
+                        // @include xs{
+                        //     font-size: 30px;
+                        // }
+                    }
+                    p{
+                      position: absolute;
+                      top:20%;
+                      left: 50%;
+                      transform: translateX(-50%);
+                      color:  #444444;
+                      font-size: 10px;
+                      font-weight: 550;
+                       
+                    }
+                    .Thuong{
+                    color: $yellow_color;
+                    }
+                    .Vip{
+                        color:chartreuse ;
+                    }
+                    .isChoosing{
+                       color: #fff;
+                    }
+                    .daDat{
+                      color: #8B8989;
+                        cursor: no-drop;
+                    }
+                    
+                }
+            }
+            
+            
+            .ghiChu{
+               
+                display: flex;
+                justify-content: space-around;
+                width: 100%;
+                margin-top: 40px;
+                .item_often{
+                    width: 80px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    .seat_often{
+                        box-shadow:  2px 3px 4px 3px $pink_color;
+                        max-width: 50px;
+                        max-height: 50px;
+                        .icon_often{
+                            font-size: 36px;
+                            color: $yellow_color;
+                        }
+    
+                    }
+                    .text_often{
+                        color: #fff;
+                       margin-top: 10px;
+                    }
+                }
+                
+                .item_vip{
+                    width: 80px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    .seat_vip{
+                        box-shadow:  2px 3px 4px 3px $pink_color;
+                        max-width: 50px;
+                        max-height: 50px;
+                        .icon_vip{
+                            font-size: 36px;
+                            color:chartreuse ; 
+                        }
+                    }
+                    p{
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+                .item_choose{
+                    width: 80px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    .seat_choose{
+                        box-shadow:  2px 3px 4px 3px $pink_color;
+                        max-width: 50px;
+                        max-height: 50px;
+                        .icon_choose{
+                            font-size: 36px;
+                            color: #fff; 
+                        }
+                    }
+                    p{
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+                .item_booked{
+                    width: 80px;
+                    height: 150px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    align-items: center;
+                    .seat_booked{
+                        box-shadow:  2px 3px 4px 3px $pink_color;
+                        max-width: 50px;
+                        max-height: 50px;
+                        .icon_booked{
+                            font-size: 36px;
+                            color: #8B8989; 
+                        }
+                    }
+                    p{
+                        color: #fff;
+                        margin-top: 10px;
+                    }
+                }
+
+            }
+    
+           
+            
+        
+        }
+        .infoPicture{
+         position: relative;
+         @include ipad{
+             padding: 0px 40px;
+             height: 60vh;
+         }
+         @include xs{
+             height: 90vh;
+         }
+            .row{
+                @include ipadpro{
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+                @include ipad{
+                    padding-left: -15px !important;
+                    padding-right: -15px !important;
+                }
+               
+            }
+            .infoMovie{
+                border: 2px solid $pink_color;
+                height: 40vh;
+                padding: 15px 0;
+                @include ipadpro{
+                    height:25vh;
+                }
+                @include ipad{
+                    height: 28vh;
+                    padding:15px 40px;
+                }
+                @include xs{
+                    height: 42vh;
+                }
+                .picture{
+                    width: 300px;
+                    height:100%;
+                    position: relative;
+                    @include ipadpro{
+                       height: 18vh; 
+                    }
+                    @include ipad{
+                        height: 25vh;
+                    }
+                    @include xs{
+                        height: 26vh;
+
+                    }
+                    .picture_movie{
+                        width: 150px;
+                        height: 30vh;
+                        @include ipadpro{
+                            width: 120px;
+                            height: 15vh;
+                        }
+                        @include ipad{
+                            width: 140px;
+                            height: 16vh
+                        }
+                        @include xs{
+                            width: 120px;
+                            height: 16vh
+                        }
+                    }
+                    .picture_movie img{
+                        display: block;
+                        width: 100%;
+                        height: 25vh;
+                        box-shadow: 0px 0px 12px 0px #fff;
+                        border-radius: 5px;
+                        @include ipadpro{
+                            height: 12vh;
+                        }
+                        @include ipad{
+                            height: 16vh
+                        }
+                    }
+                    .text_digital{
+                       line-height: 3px;
+                       position: absolute;
+                       bottom: -5%;
+                       left: 0;
+                       width: 100%;
+                       text-align: center;
+                       @include ipadpro{
+                           left: 16%;
+                       }
+                       @include ipad{
+                           left: 15%;
+                           width: 100px;
+                       }
+                    
+                        h6{
+                            font-size: 40px;
+                            color: $pink_color;
+                           text-shadow: 0px 0px 15px $pink_color;
+                           font-weight: bold;
+                        }
+                        p{
+                            font-weight: bold;
+                            color: #fff;
+                            text-shadow: 0px 0px 15px #fff;
+                        }
+                    }
+                }
+                .infoMovie_text{
+                    h5{
+                        color:$yellow_color;
+                        font-weight: bold;
+                        font-size: 25px;
+                        @include ipadpro{
+                            margin-left: 30px;
+                        }
+                    }
+                    .sestion_text{
+                        font-size: 20px;
+                        color: #fff;
+                        @include ipadpro{
+                            margin-left: 30px;
+                            display:  flex;
+                            flex-wrap: wrap;
+                            font-size: 22px;
+                        }
+                        .time_text{
+                            font-weight: bold;
+                            color:$yellow_color;
+                        }
+                        p{
+                            font-weight: bold;
+                        }
+                    }
+                    .cinema{
+                        border-top: 1px solid $pink_color;
+                        padding-top: 20px;
+                        @include ipadpro{
+                            margin-left: 30px;
+                           
+                        }
+                        .text_cinema{
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #fff;
+                            @include ipadpro{
+                                display:  flex;
+                                flex-wrap: wrap;
+                                font-size: 22px;
+                            }
+                        }
+                        h6{
+                            font-weight: bold;
+                            font-size: 18px;
+                            color: #fff;
+                            @include ipadpro{
+                                font-size: 18px;
+                            }
+                        }
+                        p{
+                            font-size: 15px;
+                            color: #fff;
+                            @include ipadpro{
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+    
+            }
+            .booked_seat{
+                border: 2px solid $pink_color;
+                width: 100%;
+                position: absolute;
+                left: 0;
+                top:50%;
+                @include ipad{
+                    width: 680px;
+                    margin-left: 25px;
+                }
+                @include xs{
+                    width:335px;
+                    margin-left:25px;
+                }
+                padding: 10px;
+                .text_booking{
+                  display: flex;
+                  min-height: 6vh;
+                 
+                  .seat_content{
+                    width: 150px;
+                    height: 5vh;
+                    span{
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: $yellow_color;
+                        @include ipadpro{
+                            font-size: 22px;
+                        }
+     
+                      }    
+                  }          
+                   p{
+                       margin-left: 10px;
+                       display: flex;
+                       flex-wrap: wrap;
+                       color: #fff;
+                       font-weight: bold;
+                        @include ipadpro{
+                            font-size: 22px;
+                        }
+                   }
+                
+                }
+                .total_money{ 
+                    
+                    .text_money{
+                        display: flex;
+                        align-items: center;
+                        height: 7vh;
+                        @include ipadpro{
+                            height: 5vh;   
+                        }
+                         
+                        h6{
+                        font-weight: bold;
+                        font-size: 20px;
+                        color: $pink_color;
+                        @include ipadpro{
+                            font-size: 22px;
+                        }
+                        }
+                        p{                          
+                            color: #fff;
+                            font-weight: bold;
+                            margin-left: 30px;
+                            font-size: 30px;
+                        }
+                    }
+                    button{
+                        width: 100%;
+                        color: $white_color;;
+                        font-weight: bold;
+                        background-color: $pink_color;
+                        border: none;
+                        height: 30px;
+                        border-radius: 5px;
+                        @include ipadpro{
+                            font-size: 22px;
+                            height: 35px;
+                        }
+                    }
+                }
+
+            }
+            
+        }
+    
+    }
+}

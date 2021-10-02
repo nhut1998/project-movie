@@ -1,0 +1,154 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+.formMovie{
+    width: 100%;
+    height: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url('../../../assets/img/bg1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 105vh;
+   @include ipadpro{
+    height: 70vh;
+  }
+  @include ipad{
+      height: 75vh;
+  }
+  @include xs{
+      height: 90vh;
+  }
+    .itemLogin{
+         box-shadow: 0px 0px 5px 5px rgb(34, 32, 32) ;
+        width: 300px;
+        height: 55vh;
+        position: relative;
+        margin-top: 50px;
+       background-color: black;
+        border-radius: 8px;
+        @include ipadpro{
+            height: 34vh;
+            width: 320px;
+        }
+        @include ipadpro{
+            height: 36vh;
+        }
+        @include xs{
+            height: 50vh;
+        }
+        h6{
+            color: $pink_color;
+            text-align: center;
+            font-size: 25px;
+            font-weight: bold;
+            margin-top: 20px;
+        }     
+        .formItem{
+            width: 300px;
+            height: 45vh;
+            background-color: #000;
+            border-radius: 8px;
+            padding: 0px 20px;
+            position: absolute;
+            top: 17%;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            @include ipadpro{
+                height: 27vh;
+                width: 320px;
+            }
+            @include ipadpro{
+              height: 30vh;
+            }
+            @include xs{
+                height: 40vh;
+            }
+           
+            .formLogin{
+               padding: 0 25px;
+                .formGroup{
+                    position: relative;
+                    width: 250px;
+                    @include ipadpro{
+                       width: 280px;
+                    }
+                }
+                button{
+                    margin-top: 10px;
+                    background-color: $pink_color;
+                    border: none;
+                    border-radius: 16px;
+                    font-weight: bold;
+                    color: #fff;
+                    @include ipadpro{
+                        font-size: 20px;
+                       }
+                }
+               
+                .pushRegister{
+                   height: 60px;
+                   display: flex;
+                   align-items: center;
+                   text-align: center;
+                   white-space: nowrap;
+                   margin-top: 10px;
+                    p{
+                        color: white;
+                        font-weight: bold;
+                        @include ipadpro{
+                            font-size: 18px;
+                           } 
+                    }
+                    h6{
+                        font-size: 14px;
+                        margin-bottom: 30px;
+                        margin-left: 5px;
+                        cursor: pointer;
+                        @include ipadpro{
+                            font-size: 18px;
+                           }
+                  
+                    }
+
+                }
+              
+            }
+            
+        
+        }
+    }
+}
+.nameInput{
+   color: #fff;
+   font-size: 18px;
+   @include ipadpro{
+   font-size: 20px;
+  }
+}
+.formAccount{
+    background-color:unset !important;
+    border: unset !important;
+    border-bottom: 2px solid #fff !important;
+    outline: none !important;
+    box-shadow: unset !important;
+}
+.form-control.is-invalid:focus{
+    box-shadow: 0px 0px 20px $pink_color !important;
+}
+.formControls{
+    background-color:unset !important;
+    border: unset !important;
+    border-bottom: 2px solid #fff !important;
+    outline: none !important;
+    box-shadow: unset !important;
+}
+
+
+.formText{
+    color: red !important;
+}

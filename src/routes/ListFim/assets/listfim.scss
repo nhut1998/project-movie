@@ -1,0 +1,264 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+
+.list_fim img {
+    display: block;
+    width: 100%;
+    height: 43vh;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    @include ipadpro{
+        height: 17vh;
+        width: 100%;  
+    }
+    @include ipad{
+        height: 19vh;
+    }
+    @include xs{
+        height: 19.5vh;
+    }
+}
+.list_movie{
+    position: relative;
+    padding: 50px 70px;
+    background-color: #000000;
+    height: 85vh;
+    @include ipadpro{
+    height: 42vh;
+    width: 100%;
+    padding-top: 50px;
+    }
+    @include ipad{
+        height:45vh;
+        padding: 50px 50px;
+    }
+    @include xs{
+        height:48vh;
+        padding:28px 30px 20px 25px;
+    
+    }
+    .movie{
+        position: relative;
+        z-index: 1;
+        
+        h2{
+            color: $white_color;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: center;
+            @include ipadpro{
+                font-size: 26px; 
+            }
+            @include ipad{
+                font-size: 24px;
+            }
+            @include xs{
+                font-size: 20px;
+            }
+         
+        }
+        .slick-slider{
+            position: relative;
+            margin-top: 40px;
+            @include ipadpro{
+               margin-top: 40px; 
+               height: 30vh;
+               padding-right: 4px;
+            }
+            @include ipad{
+                margin-top: 30px;
+             }
+             @include xs{
+                 padding-right: 12px;
+                 margin-top: 20px;
+             }
+            .slick-list{
+                @include ipadpro{
+                    height: 30vh;
+                 } 
+                 .slick-track{
+                     @include ipadpro{
+                     height: 30vh;
+                 }
+
+                 }
+            }
+            .MuiSvgIcon-root{
+                color: $pink_color         
+            }
+            .slick-arrow{
+                position: absolute;
+                top: 35%;
+                font-size: 40px;
+                @include ipadpro{
+                    top: 34%;
+                }
+                @include ipad{
+                    top: 37%;
+                }
+                @include xs{
+                    font-size: 30px;
+                    top: 40%;
+                }           
+            }
+         
+            .slick-next{
+                right: -4%;
+                transition: all 0.25s;
+                transform: translateX(0);
+                @include xs{
+                    right: -5%;
+                }
+               
+            }
+            .slick-prev{
+                left: -3%;
+                transition: all 0.25s;
+                transform: translateX(0);
+                @include xs{
+                    left: -4%;
+                }
+            }
+            .slick-next:hover{
+                transform: translateX(18%);
+                opacity: 0.1;
+            }
+            .slick-prev:hover{
+                transform: translateX(-18%);
+                opacity: 0.1;
+            }
+        }
+        .item_fim{
+            width:200px ;
+             height: 80vh;
+             padding: 10px;
+             @include ipadpro{
+                height: 25vh;
+                 width: 100%;
+                }
+             @include ipad{
+                 height:25vh;
+            }
+            
+           .list_fim{
+            height: 55vh;
+            border-radius: 10px;
+            box-shadow:  2px 3px 4px 3px $pink_color;
+            position: relative;
+            padding: 1px;
+            @include ipadpro{
+            height: 23vh;
+             width: 100%;
+            }
+            @include ipad{
+                height: 26vh;
+                width: 170px;
+                margin-left: 15px;
+            }
+            @include xs{
+                height: 27vh;
+                width: 125px;
+                margin-left: 8px;
+            }
+            .content_fim{
+               text-align: center;
+               margin-top: 5px;
+               position: relative;
+               width: 100%;
+               height: 10vh;
+               @include ipadpro{
+                height: 65px;
+                width: 100%;
+                }
+                @include ipad{
+                   height: 55px;
+                }
+                @include xs{
+                    text-overflow: ellipsis;
+                }
+               h6{
+                   font-size: 18px;
+                   font-weight: bold;
+                   color: $pink_color;
+                   @include ipadpro{
+                    font-size: 15px;
+                    }
+               }
+               .star_fim{
+                   position: absolute;
+                   bottom: 0;
+                   width: 100%;
+                   .star{
+                       @include xs{
+                           font-size: 16px;
+                       }
+
+                   }
+                   
+               }
+            }
+            .btn_override{
+                width: 100%;
+                height: 100%;
+                background-color:rgba(0, 0, 0, 0.4);
+                border-radius: 10px;
+                position: absolute;
+                top:0;
+                left: 0;
+                opacity: 0; 
+                text-align: center;                       
+                .icon_movie{
+                   font-size: 75px;
+                   color: $pink_color;
+                   transform: translateY(0);
+                   transition: all 0.5s;
+                   opacity: 0;
+                   cursor: pointer;
+                                                 
+                }                          
+                .btn_ticket{
+                    position: inherit;
+                    left: 0;
+                    bottom: 13%; 
+                    width: 100%;
+                    height: 40px;
+                    border-radius: 5px;
+                    color: $white_color;
+                    font-weight: bold;
+                    border: none;
+                    background-color: $pink_color;
+                    @include ipad{
+                        bottom: 10%;
+                    }
+                }
+
+            }
+            .btn_override:hover{
+                opacity: 1;
+            }
+            .btn_override:hover > .icon_movie{
+                transform: translateY(120px);
+                opacity: 1;
+                @include ipadpro{
+                    transform: translateY(100px);
+                }
+                @include ipad {
+                    transform: translateY(60px); 
+                }
+
+            } 
+        }
+        }
+    }  
+}
+.list_movie::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.88);
+
+}

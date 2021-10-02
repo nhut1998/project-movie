@@ -1,0 +1,380 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+.mobile{
+    height: 80vh;
+    padding-top: 52px;
+    background-image:url('../../../assets/img/212.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    @include ipadpro{
+        height: 46vh;
+        // height: 73vh;
+        padding-top: 20px;
+    }
+    @include ipad{
+        height: 75vh;
+        width: 100%;
+    }
+    @include xs{
+        height: 136vh;
+        padding-top: 5px;
+    }
+  
+    .mobile_item{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+     ;
+        @include ipad{
+            padding-left: 30px;
+            margin-top: 38px;
+        }
+        @include xs{
+            padding-left: 25px;
+            margin-right: 0px !important;
+            height: 85vh;
+        }
+        
+        .info_mobile{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding:0px 70px;
+            @include ipadpro{
+                padding:0px 30px 0px 50px
+            }
+            @include ipad{
+                height: 15vh;
+                padding: 0px 55px;
+                display: unset;
+            }
+            @include xs{
+                padding: 0px 0px;
+                text-align: center;
+            }
+            .mobile_group{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 30vh;
+                margin-top: 40px;
+                @include ipadpro{
+                    height:10vh;
+                    margin-top: unset;
+                }
+               
+                h6{
+                    color: $white_color;
+                 font-weight: bold;
+                 font-size: 18px;
+                 @include ipadpro{
+                    font-size: 20px;
+                 }
+                 @include xs{
+                     font-size: 18px;
+                 }
+                }
+                p{
+                    color: $white_color;
+                    font-weight: bold;
+                    @include ipadpro{
+                        font-size: 20px;
+                    }
+                    @include xs{
+                        font-size: 19px;
+                    }
+                }
+                .form-control{
+                    border: 2px solid $pink_color;
+                    border-radius: unset;
+                    outline: unset;
+                    box-shadow: unset;
+                    background-color: unset;
+                    color: $white_color;
+                }
+                .btn-outline-secondary{
+                    color: $white_color;
+                    background-color:$pink_color;
+                    // border: 2px solid $pink_color;
+                    border-radius: 8px;
+                    outline: unset;
+                    box-shadow: unset;
+                }
+            }
+    
+        }
+        .application_mobile{
+            @include ipad{
+                height: 50vh;
+                padding-left: 30px;
+                margin-top: 40px;
+            }
+            @include xs{
+                height: 140vh;
+                padding-left: 0px;
+                width: 100%;
+                margin-top: 70px;
+            }
+            
+           
+            .app_mobile{
+                height: 65vh;
+                padding-left: 0px !important;
+                padding-right: 20px !important;
+                @include ipadpro{
+                    height: 40vh;
+                    padding-left: 0px !important;
+                    padding-right: 0px !important;
+                }
+                @include ipad{
+                    height: 50vh;
+                    width: 100%;
+                }
+                @include xs{
+                    height: 100vh;
+                    width:325px;
+                    margin-left: 18px;
+                  
+                    
+                }
+              
+              .item_app{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    height: 70vh;
+                    @include ipadpro{
+                        height: 40vh;
+                        width: 500px;
+                    }
+                    @include ipad{
+                        display: unset;
+                        height: 60vh;
+                        width: 100px;
+                        
+                    } 
+                    @include xs{
+                        height: 45vh;
+                        width: 600px;
+                    }       
+                    .iphone{
+                        width: 260px;
+                        position: absolute;
+                        z-index: 2;
+                        top:-4%;
+                        left: -15.5%;
+                        padding: 19px;
+                        
+                        @include ipadpro{
+                            top: 9%;
+                            left: -9%;
+                        }
+                        @include ipad{
+                            top: -3.5%;
+                            left: -7%;
+                        }
+                        @include xs{
+                            width: 215px;
+                            top:-4%;
+                            left: 17%;
+                        }
+                       }
+                       .iphone img{
+                         display: block;
+                         width: 100%;
+                       }
+                    .slick_app{
+                     height: 62vh;
+                     width: 210px;
+                    //  margin-top: 10px;
+                     padding: 5px;
+                     position: absolute;
+                     left: -3%;
+                     top:2%;
+                     @include ipadpro{
+                         height: 30vh;
+                         padding: 5px;
+                         position: absolute;
+                         left: 4%;
+                         top:14%;                 
+                     }
+                     @include ipad{
+                         height: 50vh;
+                         position: absolute;
+                         left: 4%;
+                         top:1%;
+                     }
+                     @include xs{
+                        width: 190px !important;
+                        position: absolute;
+                        left: 25%;
+
+                     }
+                     .slick-slider{
+                        border-radius: 5px;
+                     
+                        @include ipadpro{
+                            height: 34vh !important;  
+                        }
+                       @include ipad{
+                           height: 45vh !important;
+                       }
+                       @include xs{
+                        width: 160.5px;
+                        position: relative;
+                        height: 40vh
+                       }
+                 
+                    } 
+                           
+                    .slider_two{
+                         height: 68.5vh;
+                         width: 240px;
+                         border-radius: 15px;
+                         @include xs{
+                             height: 60vh;
+                             width: 150px;
+                         }
+                         img{
+                            display: block;
+                            width: 100%;
+                            border-radius: 15px;
+                            @include xs{
+                                width: 160px;
+                               height: 41vh;
+                            }      
+                         }                         
+                    }        
+                    }
+                }
+                .item_application{
+                    display: flex;
+                    align-items: center;
+                    padding-bottom: 50px;
+                  
+                    @include ipadpro{
+                       height: 40vh;
+                       padding-top: 20px;
+                       width: 700px;
+                    }
+                    @include ipad{
+                        height: 60vh;
+                        display: unset;
+                    } 
+                    @include xs{
+                        width:100%;
+                        display: unset;
+                    
+                    }
+                    .item_content{
+                        margin-left: 10px;
+                        position: relative;
+                        @include ipadpro{
+                            margin-top: 60px;
+                        }
+                        @include ipad{
+                            width: 450px;
+                        }
+                        @include xs{
+                            width: 100%;
+                            margin-left: 0px;
+                            margin-right: 10px;
+                        }           
+                        h6{
+                            color: $pink_color;
+                             font-weight: bold;
+                             font-size: 20px;
+                             @include ipadpro{
+                                font-size: 20px;
+                            ;
+                            }
+                            @include ipad{
+                                text-align: center;
+                            }
+                        }
+                        p{
+                            color: $white_color;
+                            font-weight: bold;
+                            @include ipadpro{
+                                font-size: 18px;
+                                margin-top: 10px;
+                            }
+                            @include ipad{
+                                text-align: center;
+                            }
+                        }
+                        .application_down{
+                            display: flex;
+                            flex-direction: column;
+                            width: 200px;
+                            @include ipadpro{
+                                width: 180px;
+                            }
+                            @include ipad{
+                                display: flex;
+                                align-items: center;
+                                width: 150px;
+                                position: absolute;
+                                left: 50%;
+                                transform: translateX(-50%);
+                            }
+                                               
+                            img{
+                                border-radius: 15px;
+                                margin-top: 10px;
+                                display: block;
+                                width: 100%;
+                                padding: 5px;
+                                height: 70px;
+                                @include xs{
+                                    width: 140px;
+                                    height: 8vh;
+                                }  
+                            }
+                           
+                            
+
+                        }
+                    }
+                   
+                }
+                
+
+            }
+            
+
+        }
+    }
+    
+}
+.mobile::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include ipadpro{
+        height: 100%;
+    }
+}
+
+
+
+.item_app{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 600px;
+    @include ipadpro{
+        display: unset;
+        height: 28vh;
+        width: 500px;
+     
+    } 
+    
+}

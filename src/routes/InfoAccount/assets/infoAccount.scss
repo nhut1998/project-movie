@@ -1,0 +1,382 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+.form-account{
+    height: 50vh;
+    position: relative;
+    h6{
+        color: $white_color;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+    .form_item{
+        width: 400px;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include ipadpro{
+            width: 450px;
+        }
+        @include xs{
+            width: 300px;
+        }
+        .form-group{
+            .text-muted{
+                color: red !important;
+            }
+            .form-control{
+                background-color: unset !important;
+                border: 2px solid $pink_color; 
+                color: #fff;
+                @include ipadpro{
+                    height: 55px;
+                    font-size: 22px;
+                } 
+                @include xs{
+                    height: 50px;
+                }         
+            }
+            .form-control:focus{
+                border: unset;
+                box-shadow: 0 0 0 3px $yellow_color !important;
+            }
+
+        }
+        .AdBtn{
+            background-image: linear-gradient(to right, $yellow_color, $pink_color);
+            border: unset;
+            color: #fff;
+            font-weight: bold;
+            height: 38px;
+            border-radius: 7px;
+            @include ipadpro{
+                font-size: 24px;
+                height: 55px;
+            }
+            @include xs{
+                height: 47px;
+                font-size: 21px;
+            }
+
+        }
+    }
+}
+
+// OnchangePassWord
+.ChangePassWord{
+    // background-color: #000;
+    height: 50vh;
+    position: relative;
+    h6{
+        color: $white_color;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+    }
+    .ChangeItems{
+        width: 400px;
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include ipadpro{
+            width: 450px; 
+        }
+        @include xs{
+            width: 300px;
+        }
+        .form-group{
+            .form-control{
+                background-color: unset !important;
+                border: 2px solid $pink_color;
+                color: #fff;
+                @include ipadpro{
+                    height: 55px;
+                    font-size: 22px;
+                }
+                @include xs{
+                    height: 50px;
+                }  
+                  
+            }
+            .form-control:focus{
+                border: unset;
+                box-shadow: 0 0 0 3px $yellow_color !important; 
+
+            }
+        }
+        .btnPass{
+            background-image: linear-gradient(to right, $yellow_color, $pink_color);
+            border: unset;
+            color: #fff;
+            font-weight: bold;
+            height: 38px;
+            border-radius: 7px;
+            font-size: 16px;
+            @include ipadpro{
+                font-size: 24px;
+                height: 55px;
+            }
+            @include xs{
+                height: 47px;
+                font-size: 21px;
+            }
+
+        }
+
+    }
+}
+//info ticker
+.infoTicket{
+     h6{
+        color: $white_color;
+        font-weight: bold;
+        font-size: 25px;
+        text-align: center;
+     }
+    .ticker{
+   
+        height: 72vh;
+        color:rgb(0,0,0);
+        overflow-y: auto;
+        padding: 30px;
+        @include ipadpro{
+            height: 60vh;
+            padding: 30px 0px;
+        }
+        @include xs{
+            margin-top: 30px;
+            height: 72vh;
+            color:rgb(0,0,0);
+            overflow: auto;
+            padding: 30px;
+            
+        }
+        .tableTicket{
+            color: #fff;
+            thead{
+                height: 10vh;
+                @include ipadpro{
+                    height: 5vh;
+                }
+                @include xs{
+                    height: 4vh;
+                    width:800px ;
+                }
+                tr{
+                    border-top: 2px solid $pink_color;
+                    border-bottom: 2px solid $pink_color;
+                    height: 10vh;
+                    @include ipadpro{
+                        height: 4vh;
+                    }
+                    @include xs{
+                        height: 4vh;
+                  
+                    }
+                    th{
+                        border: unset;
+                        height: 10vh;  
+                        padding: unset;
+                        line-height: 10vh; 
+                        @include ipadpro{
+                            height: 4vh;
+                            line-height: 5vh;
+                        }
+                        @include xs{
+                            width: 100px;
+                            height: 4vh;
+                            line-height: 4vh;
+                        }        
+                    }                         
+                }
+
+            }
+            tbody{
+                tr{
+                    border-top: 2px solid $pink_color;
+                    height: 10vh;
+                    @include xs{
+                        height: 4vh;
+                    }
+                    td{
+                        border: unset;
+                        height: 10vh;  
+                        padding-top: 15px;
+                       
+                        @include xs{
+                            height: 4vh;
+                        }                                      
+                    }
+                    .td_seat{
+                        display: flex;
+                        width: 150px;
+                        flex-wrap: wrap;
+                        span{
+                            margin-left: 5px;
+                        }
+                    }
+                  
+            
+                }
+
+            }
+           
+          
+        }
+      
+    }
+}
+// // container
+
+
+.combination{
+    height: 110vh;
+    padding: 70px 90px;
+    position: relative;
+    background-color:#fff;
+    @include ipadpro{
+        padding: 70px 40px;
+       height: 80vh;
+    }
+    @include ipad{
+        padding: 70px 30px;
+    }
+    @include xs{
+        height: 100vh;
+    }
+    
+    .combinationItem{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        height: 90vh;
+        background-color: rgb(0,0,0);
+        @include ipadpro{
+            height: 65vh;
+        }
+        @include xs{
+            height: 85vh;
+        }
+        .ant-tabs{
+           display: flex;
+           flex-direction: row;
+           width: 100%;
+           height: 90vh;
+           box-shadow: 0px 0px 7px 7px $pink_color;
+           @include ipadpro{
+               height: 65vh;
+           }
+           @include ipad{
+            display: flex;
+            flex-direction: column;
+          }
+          @include xs{
+              height: 85vh;
+          }
+
+            & > .ant-tabs-nav{
+                flex: 1;
+               @include ipad{
+                width: 650px;
+                height: 20vh;
+                padding-top: 10px;
+                margin: 0px;
+                flex: 0;
+            
+               }
+             .ant-tabs-nav-wrap{
+                 display: flex;
+                 flex-direction: column;
+                
+             }
+             .ant-tabs-nav::before{
+                 border: unset !important;
+             }
+            
+             .ant-tabs-nav-list{
+                display: flex;
+                flex-direction: column;
+                width: 250px;
+                text-align: left;
+                color: #fff;
+                @include ipadpro{
+                    width: 200px;
+                }
+                @include ipad{
+                    display: flex;
+                    flex-direction: row;
+                    width: 550px;
+                    margin-left:80px
+                }
+                @include xs{
+                    display: flex;
+                    flex-direction: column;
+                }
+                .ant-tabs-tab{
+                    text-align:center;
+                    margin: unset;
+                    color: $white_color;
+                    @include ipad{
+                        width: 180px;
+                       
+                    }
+                    
+                    .ant-tabs-tab-btn{
+                        font-size: 13px;
+                        width: 250px;
+                     
+                        transform: unset !important;
+                        @include ipadpro{
+                            font-size: 16px;
+                        }
+                        @include ipad{
+                            width: 200px;
+                            font-size: 16px;
+                           
+                        }
+                      
+                    }
+                }
+                .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+                  width: 250px;
+                  color: $pink_color;
+                  @include ipad{
+                      width: 200px;
+                  }
+                }
+
+             }
+            }
+            .ant-tabs-content-holder{
+                flex: 5;
+                position: relative;
+                 height: 90vh;
+                width: 100%;
+                padding: 10px;
+                border-left: 2px solid $pink_color;
+                @include ipadpro{
+                    padding: 10px 0px;
+                }
+                .ant-tabs-content{
+                    width: 100%;
+                }
+            }
+           
+        }
+        
+        
+            
+        
+    }
+
+}
+
+
+.ant-tabs-top > .ant-tabs-nav::before{
+    border: unset !important;
+}
+.ant-tabs-ink-bar{
+    background: unset !important;
+}

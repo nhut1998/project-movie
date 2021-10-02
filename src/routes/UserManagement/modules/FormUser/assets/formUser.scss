@@ -1,0 +1,51 @@
+@import "assets/scss/variables.scss";
+
+.userForm{
+    background-color:#000;
+    padding: 10px 10px;
+    height: 95vh;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    h2{
+        color: $pink_color;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .form-group{
+        label{
+            color: $white_color;
+            font-weight: bold;
+        }
+        .form-control{
+            border: unset;
+         border: 2px solid $pink_color !important;
+         box-shadow: unset;
+         background-color: unset;
+        
+        }
+    }
+    .btn_user  {
+        background-color: $pink_color;
+        color: $white_color;
+        font-weight: bold;
+        outline: unset;
+        border: unset;
+        width: 145px;
+        height: 40px;
+        border-radius: 15px;
+    }
+    .btn_reset{
+        background-color: $pink_color;
+        color: $white_color;
+        font-weight: bold;
+        outline: unset;
+        border: unset;
+        width: 145px;
+        height: 40px;
+        border-radius: 15px;
+        margin-left: 30px;
+    }
+}

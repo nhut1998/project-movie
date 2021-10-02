@@ -1,0 +1,202 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+.page_tabs{
+    background-image:url('../../../assets/img/ct.jfif') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 117vh;
+    padding: 10px  70px 0px 120px;
+    position: relative;
+    @include ipadpro{
+        height: 52vh;
+        width: 100%;
+        padding:20px 10px;
+    }
+    @include ipad{
+        height:90vh;
+    }
+    @include xs{
+        height: 125vh;
+    }
+    .nav_tabs{
+        position: relative;
+        z-index: 1;
+        color: $white_color;
+        .ant-tabs-nav::before{
+            border-bottom:unset !important;
+        }
+       .ant-tabs-nav{
+        @include ipadpro{
+         padding: 0px 40px;
+          
+        }
+          
+       }
+    }
+    .ant-tabs-content-holder{
+        @include ipadpro{
+            width: 100%;
+        }
+        .ant-tabs-content{
+            @include ipadpro{
+                height: 40vh;
+                width: 100%;
+                padding: 0px 0px 0px 35px;
+                margin-top: 10px;
+            }
+            @include ipad{
+                height: 80vh;
+            }
+            @include xs{
+                padding: 0px 0px 0px 8px;
+                height: 130vh;
+            }
+            .ant-tabs-tabpane{
+                @include ipadpro{
+                    height: 40vh;
+                    width: 100%;
+                }
+                @include xs{
+                    height: 100vh;
+                }
+                .items{
+                    z-index: 1;
+                    width: 100%;
+                    padding: 0px 30px;
+                    height: 100vh;
+                    @include ipadpro{
+                     height: 28vh;
+                     width: 100%;
+                     padding:0px 20px;
+                      }
+                      @include ipad{
+                          height: 70vh;
+                      }
+                      @include xs{
+                          height: 110vh;
+                      }
+                   .items_tabs{
+                    margin-top: 20px;
+                    width: 100%;
+                    height:40vh;
+                    @include ipadpro{
+                        height: 20vh;
+                        width: 40px;
+                        margin-top: 0px;
+                     }
+                   
+                       .items_picture{
+            
+                           .picture img{
+                              display: block;
+                              width: 100%;
+                              height: 32vh; 
+                              border-top-left-radius: 20px;
+                              border-top-right-radius: 20px;
+                              @include ipadpro{
+                                height: 12vh;
+                                padding: 0px;
+                                width: 100%;
+                               }
+                               @include ipad{
+                                   height: 15vh;
+                               }
+                           }
+                           .picture{
+                              width: 210px;
+                              height: 42vh;
+                              padding:10px 4px 4px 10px;
+                              box-shadow: 5px 5px 5px $white_color inset, 5px 5px 5px $white_color;
+                              border-radius: 20px;
+                              background-color: #000;
+                              @include ipadpro{
+                                height: 16.5vh;
+                                width: 150px;
+                              }
+                              @include ipad{
+                                  height: 20vh;
+                                  margin-left: 11px;
+                              }
+                              @include xs{
+                                  margin: 0px 15px 0px 0px;
+                                 width:  130px;
+                                 height: 22vh;
+                              }                  
+                              h5{
+                                  color: $white_color;
+                                  text-align: center;
+                                  font-size: 18px;
+                                  margin-top: 8px;
+                                  @include ipadpro{
+                                    font-size: 16px;
+                                  }
+                                  @include xs{
+                                      font-size: 15px;
+                                  } 
+                              }                       
+                           }       
+               
+                       }
+                   }
+                }
+            }
+        }
+    }
+}
+.page_tabs::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+
+}
+.ant-tabs-tab-btn{
+    font-size: 25px;
+    font-weight: bold;
+    @include xs{
+        font-size: 20px;
+    } 
+    
+}
+.ant-tabs > .ant-tabs-nav{
+ @include ipadpro{
+ margin-top: 10px;
+ }
+    
+}
+.page_tabs .nav_tabs .ant-tabs-nav .ant-tabs-nav-wrap{  
+    padding-left: 50px;
+    @include xs{
+      padding-left:5px;
+    } 
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    color: $pink_color;
+    border-bottom: unset !important;
+    font-size: 27px;
+    @include xs{
+        font-size: 20px;
+    } 
+}
+.ant-tabs-tab:hover{
+    color: $pink_color !important;
+}
+
+.ant-tabs-tab-btn:active{
+    color: $pink_color;
+    
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+    // box-shadow: 0px 0px 4px 4px $pink_color;
+   
+}
+
+.ant-tabs-ink-bar {
+background: unset;
+}

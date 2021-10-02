@@ -1,0 +1,277 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+
+.banner{
+    background-image:url('../../../assets/img/b12.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    width: 100%;
+    position: relative;
+    padding: 29px 50px;
+    @include ipadpro{
+    height: 42vh;
+    width: 100%;
+    }
+    @include ipad{
+    padding: 29px 28px;
+    height: 46vh;
+    }
+    @include xs{
+        padding: 29px 18px;
+        height: 42vh;
+    }
+    .item_banner{
+        width: 100%;
+        height: 45px;
+        display: flex;
+        box-shadow: 3px 3px 3px #000 inset, 3px 3px 3px #000;
+        border-radius: 10px;
+        padding-right: 10px;
+        @include xs{
+            display: flex;
+            flex-wrap: wrap;
+            width: 140px;
+            box-shadow: unset;
+            padding: unset;
+        }
+        .form-group{
+            width: 100%;
+         
+           @include xs{
+            box-shadow: 3px 3px 3px #000 inset, 3px 3px 3px #000;
+            border-radius: 15px;
+            height: 28px;
+           }
+           .form-control:hover{
+             color: $pink_color;  
+           }
+            .form-control{
+                border: none;
+                background-color: unset;
+                min-height: 10px;
+                position: relative;
+                z-index: 2;
+                color: #fff;
+                font-weight: bold;
+                margin-top: 3px;
+                cursor: pointer;
+                @include xs{
+                    height: 28px;
+                    width: 128px;
+                    font-size: 13px;
+                   margin-top: -2px;
+                }
+                option{
+                    color: #fff;
+                    background-color: black;
+                    @include ipadpro {
+                        width: 100px;
+                        font-size: 13px;                    
+                  
+                    }
+                   
+                }
+                .item_option{
+
+                }
+
+            }
+            select{
+                @include ipadpro {
+                  
+                } 
+            }
+            .form-control:focus{
+                outline: none;
+                box-shadow: unset;
+            }
+
+        }
+    }
+    .list_slider{
+        position: relative;
+        z-index: 1;
+        margin-top: 60px;
+        top: 65%;
+        padding: 0px 130px;
+        @include ipad{
+           top: 50%;
+           padding: 0px 80px;
+           height: 15vh;
+           margin-top: 85px;
+        }
+        @include xs{
+            padding: 0px 40px 0px 35px;
+            margin-top: 40px;
+        }
+
+       
+        .slick-slider{
+            @include ipad{
+                height: 10vh;
+                
+            }
+            .slick-prev:before, .slick-next:before{
+                @include xs{
+                    font-size: 16px;
+                }
+            }
+            
+        }
+        .slider_item{
+            @include ipad{
+                height: 10vh;
+            }
+            .items{
+                padding: 20px;
+                
+                .slider_one{
+                    background-image:url('../../../assets/img/124.jfif') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                     }
+                    
+    
+                }
+                .slider_two{
+                    background-image:url('../../../assets/img/125.jfif') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                    }
+    
+                }
+                .slider_three{
+                    background-image:url('../../../assets/img/127.jfif') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                    }
+    
+                }
+                .slider_four{
+                    background-image:url('../../../assets/img/128.jfif') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 0px 0px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                    }
+    
+                }
+                .slider_five{
+                    background-image:url('../../../assets/img/anh-5.jpg') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                    }
+    
+                }
+                .slider_six{
+                    background-image:url('../../../assets/img/110.jpg') ;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    height: 15vh;
+                    width: 100%;
+                    border-radius: 15px;
+                    box-shadow: 1px 1px 5px 5px #fff;
+                    @include ipadpro{
+                        height: 5vh;
+                        width: 100%;
+                    }
+                    @include ipad{
+                        height: 6vh;
+                        width: 100%;
+                     }
+                     @include xs{
+                        height: 6vh;
+                    }
+    
+                }
+            }
+        }
+    }
+}
+.banner::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+

@@ -1,0 +1,1 @@
+export const BANNER_MOVIE = '[banner]:BANNER_MOVIE'

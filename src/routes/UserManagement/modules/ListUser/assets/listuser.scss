@@ -1,0 +1,42 @@
+@import "assets/scss/variables.scss";
+
+td{
+    width: calc(100%/7);
+}
+.form_ListUser{
+    margin-top: 20px;
+    padding: 0 20px;
+    .btn_addUser {
+        background-color: #000;
+        color: #fff;
+        outline: unset;
+        border: unset;
+        width: 200px;
+        height: 40px;
+        border-radius: 15px;
+        font-weight: bold;
+    }
+    .input-group{
+        margin-top: 18px;
+        .input-group-prepend{
+            .input-group-text{
+                border-top-left-radius: 15px ;
+                border-bottom-left-radius: 15px ;
+                background-color: #000;
+                height: 42px;
+                color: $white_color;
+               
+            }
+
+        }
+        input{
+            border-top-left-radius:1px !important;
+            border-bottom-left-radius:1px !important;
+            box-shadow: unset;
+            margin-top: 2px;
+            border: 1px solid #000;
+        }
+    }
+    
+    
+}

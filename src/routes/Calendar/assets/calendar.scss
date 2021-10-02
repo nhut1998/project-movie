@@ -1,0 +1,60 @@
+@import "assets/scss/variables.scss";
+
+.calendar{
+    .item_calendar{
+        width: 600px;
+        background-color: #000;
+        height: 90vh;
+        padding: 30px;
+        margin: 20px 0px;
+        border-radius: 15px;
+        h2{
+            font-weight: bold;
+            color: $pink_color;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .form-group{
+            margin-top: 20px;
+            label{
+                color: $white_color;
+                font-weight: bold;
+            }
+            .form-control{
+             background-color: unset;
+             border: 2px solid $pink_color;
+             border-radius: 8px;
+             box-shadow: unset;
+            }
+        }
+        p{
+            color: $white_color;
+            font-weight: bold;
+        }
+        .btn_calendar{
+           width: 100%;
+           display: flex;
+           justify-content: center;
+            button{
+                background-color: $pink_color;
+                color: $white_color;
+                font-weight: bold;
+                border:unset;
+                width: 140px;
+                height: 36px;
+            }
+            .rest{
+                background-color: $pink_color;
+                color: $white_color;
+                font-weight: bold;
+                border:unset;
+                width: 140px;
+                height: 36px;
+                border-radius: 7px;
+                margin-left: auto;
+                
+                 
+            }
+        }
+    }
+}

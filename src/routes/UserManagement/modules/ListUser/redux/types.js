@@ -1,0 +1,1 @@
+export const LIST_USER = '[listuser]:LIST_USER'

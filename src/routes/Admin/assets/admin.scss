@@ -1,0 +1,43 @@
+@import "assets/scss/variables.scss";
+
+.admin{
+    padding: 10px;
+
+    .item_admin{
+        .ant-tabs{
+            display: flex;
+            flex-direction: row;
+            .ant-tabs-nav{
+                display: unset;
+                flex: 1;
+               
+                .ant-tabs-nav-list{
+                    display: flex;
+                    flex-direction: column;
+                    width: 170px;
+                    background-color: #000;
+                    border-radius: 5px;
+                    margin-top: 22px;
+                    .ant-tabs-tab{
+                        font-size: 12.5px;
+                        width: 160px;
+                        margin-left: 15px;
+                        .ant-tabs-tab-btn{
+                            color: $white_color;
+                            font-weight: bold;
+                        }
+                        
+                    }
+                    .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+                        color: $pink_color;
+                    }
+                }
+
+               
+            }
+        }
+    }
+}
+.ant-tabs-ink-bar{
+    background: unset !important;
+}

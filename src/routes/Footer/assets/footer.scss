@@ -1,0 +1,278 @@
+@import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    background-color: #000000;
+    height: 100%;
+    padding: 40px 60px;
+    @include ipadpro{
+        height: 26vh;
+    }
+    @include ipad{
+        height: 100%;
+    }
+    @include xs{
+        text-align: center;
+        padding: 50px 40px;
+    }
+   .item_cinema{
+       .cinestar{
+        @include xs{
+            padding-left: 0px;
+        }
+           h4{
+               color: $pink_color;
+               font-size: 17px;
+               font-weight: bold;
+               @include ipadpro{
+                   padding: unset;
+                   margin-bottom: 25px;
+                }
+                @include ipad{
+                    margin-bottom: 20px;
+                    font-size: 21px;
+                }
+                @include xs{
+                    font-size: 22px;
+                }
+           }
+           p{
+               color: $white_color;
+               @include ipad{
+                   font-size: 20px;
+               }
+               @include xs{
+                font-size: 20px;
+            }
+           }
+
+       }
+       .doiTac{
+        @include ipad{
+            padding-left: 23px;
+        }
+       
+           .logo_cinestar{
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 25vh;
+           @include ipadpro{
+             padding: unset;
+             height: 15vh; 
+            }
+            @include ipad{
+                height: 20vh;
+            }
+            @include xs{
+           margin-left: 30px;
+            }
+            
+           .items_cinestar img{
+               display: flex;
+               width: 100%;
+               height: 70px;
+               border-radius: 50%;
+               @include ipadpro{
+                width: 56px;
+                height: 55px;
+              
+             }
+             
+           }
+           .items_cinestar{
+               width: 70px;
+               height: 70px;
+               margin-right: 15px;
+               @include ipadpro{
+                   width: 52px;
+                   height: 50px;
+                   margin-right: 10px;
+                }
+                @include ipad{
+                    width: 65px;
+                   height: 40px;
+                   margin-right: 10px;
+                }
+
+           }
+          
+           }
+           h4{
+            color: $pink_color;
+            font-size: 17px;
+            font-weight: bold;
+            @include ipad{
+                font-size: 21px;
+              }
+            @include xs{
+                font-size: 22px;
+            }
+           }
+
+       }
+       .ungDung{
+         
+        @include ipadpro{
+         padding: unset;
+        }
+        @include ipad{
+           margin-top: 20px;
+           padding-left: 20px;
+        }
+        @include xs{
+            padding-left: 0px;
+        }
+        
+           h4{
+            color: $pink_color;
+            font-size: 17px;
+            font-weight: bold;
+            @include ipad{
+                font-size: 21px;
+              }
+            @include xs{
+                font-size: 22px;
+            }
+           }
+           .aplication img{
+               
+               width: 100%;
+               border-radius: 10px;
+               height: 60px;
+               @include ipadpro{
+                width: 90%;
+               }
+               @include ipad{
+                margin-top: 20px;
+             }
+            }
+            .aplication{
+                margin-top: 15px;
+                width: 180px;
+                border-radius: 10px;
+                @include xs{
+                margin-left:70px;
+                }
+            }
+            .aplication_store img{
+                width: 100%;
+               border-radius: 10px;
+               height: 60px;
+               @include ipadpro{
+                width: 90%;
+               }
+
+            }
+            .aplication_store{
+                width: 180px;
+                border-radius: 10px;
+                margin-top: 10px;
+                @include xs{
+                    margin-left:70px;
+                }
+            }
+       }
+       .ketNoi{
+        @include ipadpro{
+            padding: unset;   
+        }
+        @include ipad{
+            margin-top: 20px;
+            padding-left: 20px;
+         }
+         @include xs{
+             padding-left: 0px;
+         }
+        h4{
+            color: $pink_color;
+            font-size: 17px;
+            font-weight: bold;
+            @include ipadpro{
+                margin-bottom: 20px;
+            }
+            @include ipad{
+              font-size: 21px;
+            }
+            @include xs{
+                font-size: 22px;
+            }
+        }
+        h5{
+            color: $pink_color;
+            font-size: 18px;
+            font-weight: bold;
+            @include ipad{
+                margin-top: 20px;
+            }
+            @include xs{
+                font-size: 22px;
+            }
+        }
+        .contact_one{
+            color: #1E90FF;
+            font-size: 40px;
+            
+        }
+
+        .contact_two{
+            color: #FF3300;
+            font-size: 40px;
+            margin-left: 5px;
+        }
+        .contact_three{
+            color: #FF0000;
+            font-size: 50px;
+            margin-left: 5px;
+        }
+        .person{
+            color: $white_color;
+            .icon_person{
+                color: $pink_color;
+                margin-right: 5px;
+            }
+            @include ipad{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 19px;
+            }
+        }
+        .email{
+            color: $white_color;
+            margin-top: 5px;
+            @include ipad{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 19px;
+            }
+            .icon_email{
+                color: $pink_color;
+                margin-right: 5px;
+            }
+        }
+        .phone{
+            color: $white_color;
+            margin-top: 5px;
+            @include ipad{
+                font-size: 18px;
+            }
+            @include xs{
+                font-size: 19px;
+            }
+            .icon_phone{
+                color: $pink_color;
+                margin-right: 5px;
+            }
+        }
+
+       }
+
+    }
+}
