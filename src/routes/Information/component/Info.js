@@ -67,9 +67,9 @@ export default function Info({ logo, chonRap, mahe, getMovie, movieRap }) {
                         <div className='showTimes_over'>
                             {
                                 movieRap.filter(movie1 => movie1.maCumRap === movieShow)
-                                    .map((movie2) => (
-                                        movie2.danhSachPhim.map(movie3 => (
-                                            <div className='showTimes_logo row'>
+                                    .map((movie2,index) => (
+                                        movie2.danhSachPhim.map((movie3,index) => (
+                                            <div key={index} className='showTimes_logo row'>
                                                 <div className=' col-xl-5 col-lg-6 col-md-5 col-12 picture'>
                                                     <img src={movie3.hinhAnh} alt=''></img>
                                                 </div>
@@ -78,8 +78,8 @@ export default function Info({ logo, chonRap, mahe, getMovie, movieRap }) {
                                                     <p>Lịch chiếu:</p>
                                                     <div className='row'>
                                                         {
-                                                            movie3.lstLichChieuTheoPhim.map(movie4 => (
-                                                                <div className='item_btn col-xl-6 col-lg-12 col-md-6 col-6'>
+                                                            movie3.lstLichChieuTheoPhim.map((movie4,index) => (
+                                                                <div key={index} className='item_btn col-xl-6 col-lg-12 col-md-6 col-6'>
                                                                     <button
                                                                         onClick={() => history.push(`/${movie4.maLichChieu}/booking`)}
                                                                     >

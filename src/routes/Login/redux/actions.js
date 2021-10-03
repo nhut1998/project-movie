@@ -13,7 +13,6 @@ export const login = (userInfo, history, setSubmitting) => {
         swal({
           title: "Đăng nhập thành công",
           icon: "success",
-          timer: 5000
         });
         history.push('/')
       })

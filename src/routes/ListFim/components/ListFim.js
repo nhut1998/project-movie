@@ -13,12 +13,13 @@ import '../assets/listfim.scss'
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux'
 import swal from 'sweetalert'
+import Swal from 'sweetalert2'
 
 
 export default function ListFim({ listFilm }) {
     const history = useHistory()
-    const [modalTrailer, setModal]= useState('')
-    const hdModal =(trailer)=>{
+    const [modalTrailer, setModal] = useState('')
+    const hdModal = (trailer) => {
         setOpen(true)
         setModal(trailer)
     }
@@ -80,16 +81,21 @@ export default function ListFim({ listFilm }) {
             history.push(`/${maPhim}/chitietphim`)
         }
         else {
-            swal({
-                title: "Không thành công",
-                text: "Bạn phải đăng nhập tài khoản",
-                icon: "warning",
+            Swal.fire({
+                title: 'Mua vé không thành công?',
+                text: "Bạn chưa có tài khoản đăng nhập ?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#C0C0C0',
+             
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    history.push('/login')
+                }
             })
-            
-            history.push('/login')
 
         }
-
 
     }
     return (
@@ -115,7 +121,7 @@ export default function ListFim({ listFilm }) {
                                     </div>
                                     <div className='btn_override'>
                                         <PlayCircleOutlineIcon className='icon_movie'
-                                         onClick={() =>hdModal(fim.trailer)} />
+                                            onClick={() => hdModal(fim.trailer)} />
                                         <button className='btn_ticket' onClick={() => muaVe(fim.maPhim)}>MUA VÉ</button>
                                     </div>
                                 </div>
@@ -131,10 +137,10 @@ export default function ListFim({ listFilm }) {
 
             </div>
             <ModalVideo className='modal' channel='youtube' autoplay isOpen={isOpen} onClose={() => setOpen(false)} >
-                                            <iframe width="1920" height="1080"
-                                             src={modalTrailer} title='tenPhim'
-          frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
-          </ModalVideo>
+                <iframe width="1920" height="1080"
+                    src={modalTrailer} title='tenPhim'
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+            </ModalVideo>
 
         </div>
     )

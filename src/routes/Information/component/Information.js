@@ -14,20 +14,14 @@ export default function Information() {
     }, [dispatch])
 
 
-    // useEffect(() => {
-    //     dispatch(fetchDetail())
-    // }, [dispatch])
+    useEffect(() => {
+        dispatch(fetchDetail())
+    }, [dispatch])
 
-    // useEffect(() => {
-    //     dispatch(fetchDetailShowTimes())
-    // }, [dispatch])
+    useEffect(() => {
+        dispatch(fetchDetailShowTimes())
+    }, [dispatch])
 
-
-    
-
-
-   
-   
     const chonRap = useCallback(
         (maHeThongRap) => {
             dispatch(fetchDetail(maHeThongRap))

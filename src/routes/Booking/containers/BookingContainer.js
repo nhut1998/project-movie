@@ -5,6 +5,7 @@ import { useHistory, useParams } from 'react-router'
 import { useDispatch, useSelector } from 'react-redux'
 import { Loading } from 'routes/Loading/component/Loading'
 import swal from 'sweetalert'
+import Swal from 'sweetalert2'
 
 export default function BookingContainer() {
     const params = useParams()
@@ -14,7 +15,6 @@ export default function BookingContainer() {
     const infoMovie = useSelector(state => state.booking.infoBooking)
     const taiKhoanNguoiDung = useSelector(state => state.user.credential.taiKhoan)
     const user = useSelector(state => state.user.credential)
-    console.log(user.taiKhoan)
     const loading = useRef()
 
     useEffect(() => {
@@ -33,7 +33,6 @@ export default function BookingContainer() {
         }
         return choosinginfo
     }, [0, [], []])
-console.log(reserveSeat)
     const bookTicket = useCallback(() => {
         if(total ===0){
             swal({
@@ -47,8 +46,21 @@ console.log(reserveSeat)
                 maLichChieu: params.bookingID,
                 danhSachVe,
                 taiKhoanNguoiDung
-            }))
-            history.push('/account#danhsachdatve')
+            }),history)
+            Swal.fire({
+                title: 'Mua vé thành công',
+                text: "Bạn chưa có muôn xem thông tin đặt vé?",
+                icon: 'success',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#C0C0C0',
+             
+            }).then((result) => {
+                if (result.isConfirmed) {
+                 history.push('/account#danhsachdatve')
+                }
+            })
+          
         }
         else{
             swal({

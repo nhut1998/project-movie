@@ -4,24 +4,32 @@ import { Link as LinkScroll } from 'react-scroll';
 import logo from '../../../assets/img/logoNhut.png'
 import '../assets/header.scss'
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom'
 import { CLEAR_USER } from 'routes/Login/redux/types';
 import PersonIcon from '@material-ui/icons/Person';
-
-import swal from 'sweetalert'
+import Swal from 'sweetalert2'
 
 
 
 export default function Header() {
-    const history = useHistory()
     const dispatch = useDispatch()
     const user = useSelector(state => state.user.credential)
     const logOut = () => {
-        localStorage.clear()
-        dispatch({ type: CLEAR_USER })
+        Swal.fire({
+            title: 'Bạn có muốn đăng xuất',
+            icon: 'question',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#C0C0C0',
+            confirmButtonText: 'Đăng xuất',
+            cancelButtonText: 'Hủy'
+         
+        }).then((result) => {
+            if (result.isConfirmed) {
+                localStorage.clear()
+                dispatch({ type: CLEAR_USER })
+            }
+        })
     }
-
-
 
     return (
         <div className='header'>
@@ -85,8 +93,6 @@ export default function Header() {
                                     Ứng dụng
                                 </LinkScroll>
                             </li>
-                          
-
                         </ul>
                        
                         <ul className="navbar-nav navbar-hover">
@@ -95,8 +101,6 @@ export default function Header() {
                                     <PersonIcon className='icon_avt'/>
                                 <Link className="nav-link user_icon" > {user.accessToken ? user.hoTen : 'Tài khoản'}</Link>
                                 </div>
-                               
-
                                 <div className='triangle'></div>
                                 <div className= {`${user.accessToken?'items_in':'items_out'}`}>
                                     <div className='user_btn'>
@@ -125,10 +129,6 @@ export default function Header() {
 
                                                 </>
                                         }
-
-
-
-
                                     </div>
                                 </div>
                             </li>

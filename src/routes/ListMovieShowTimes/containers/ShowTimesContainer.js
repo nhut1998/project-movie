@@ -10,16 +10,11 @@ export default function ShowTimesContainer() {
     const loading = useRef()
     const dispatch = useDispatch()
     const detail = useSelector(state => state.maphim.detailMaPhim)
-
-
     const params = useParams()
-
     useEffect(() => {
         dispatch(fetchDeailId((`${params.detailID}`),loading))
         loading.current.show()
     }, [dispatch, params.detailID])
-
-
 
     return (
         <div>

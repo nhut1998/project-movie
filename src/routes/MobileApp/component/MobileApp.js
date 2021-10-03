@@ -3,7 +3,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../assets/mobile.scss'
-// import styles from "../assets/styles.module.scss";
 import ap1 from '../../../assets/img/ap7.jfif'
 import ap2 from '../../../assets/img/ap2.jfif'
 import ap3 from '../../../assets/img/ap3.jfif'
@@ -112,15 +111,10 @@ export default function MobileApp() {
                                     <div className='slider_two' >
                                         <img src={ap12} width='198' height='415'></img>
                                     </div>
-
-
-
                                 </Slider>
                             </div>
                             <div className='iphone'><img src={ip3}></img></div>
-
                         </div>
-
                         <div className='item_application col-xl-8 col-lg-7 col-md-8 col-12'>
                             <div className='item_content'>
                                 <h6>ỨNG DỤNG ĐẶT VÉ XEM PHIM TIỆN LỢI ĐÃ CÓ TRÊN SMARTPHONE</h6>

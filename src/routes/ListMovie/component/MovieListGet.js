@@ -9,11 +9,9 @@ export default function MovieListGet() {
     const movieListNext = useSelector(state => state.movie.listMovieNext)
     console.log(movieListNext)
 
-    // useEffect(() => {
-    //     dispatch(fetchListMovieNext())
-    // }, [dispatch])
-
-
+    useEffect(() => {
+        dispatch(fetchListMovieNext())
+    }, [dispatch])
 
     const xemThem = useCallback(
         (trang) => {

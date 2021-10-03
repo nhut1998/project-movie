@@ -2,7 +2,7 @@ import {LIST_MOVIE_NEXT } from "./types"
 import axios from "helpers/axios"
 
 
-export const fetchListMovieNext =(id=1)=>{
+export const fetchListMovieNext =(id=2)=>{
   return dispatch =>{
     axios ({
       url:`/api/QuanLyPhim/LayDanhSachPhimPhanTrang?maNhom=GP02 &soTrang=${id}&soPhanTuTrenTrang=8`,

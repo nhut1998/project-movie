@@ -21,19 +21,14 @@ export default function ListMovie({ xemThem, movieListNext }) {
                         <div className='items row'>
                             {
                                 movieListNext.items?.map((item, index) => (
-                                    <div className='items_tabs col-xl-3 col-lg-3 col-md-4 col-6 '>
+                                    <div key={index} className='items_tabs col-xl-3 col-lg-3 col-md-4 col-6 '>
 
-                                        <div key={index} className=' items_picture'>
+                                        <div className='items_picture'>
                                             <div className='picture'>
-                                                <img src={item.hinhAnh} alt=""></img>
-                                                
+                                                <img src={item.hinhAnh} alt=""></img>                           
                                                 <h5>{item.tenPhim}</h5> 
-                                                
-
-                                            </div>
-                                       
-                                        </div>
-                                       
+                                            </div>                                 
+                                        </div>                               
                                     </div>
                                 ))
                             }
@@ -43,9 +38,9 @@ export default function ListMovie({ xemThem, movieListNext }) {
                     <div className='items row'>
                             {
                                 movieListNext.items?.map((item, index) => (
-                                    <div className='items_tabs col-xl-3 col-lg-3 col-md-4 col-6 '>
+                                    <div key={index} className='items_tabs col-xl-3 col-lg-3 col-md-4 col-6 '>
 
-                                        <div key={index} className=' items_picture'>
+                                        <div className=' items_picture'>
                                             <div className='picture'>
                                                 <img src={item.hinhAnh} alt=""></img>
                                                 <h5>{item.tenPhim}</h5> 

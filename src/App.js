@@ -9,10 +9,8 @@ import Footer from 'routes/Footer/component/Footer';
 import ScrollToTop from 'routes/ScrollToTop/component/ScrollToTop'
 import ListMovieShowTimes from 'routes/ListMovieShowTimes';
 import Booking from 'routes/Booking';
-import ListAdminMovie from 'routes/AdminMovie/modules/ListAdminMovie';
 import { Create, Edit } from './routes/AdminMovie/modules/FormAdmin'
 import Calendar from './routes/Calendar'
-import ListUser from 'routes/UserManagement/modules/ListUser';
 import { AddUser, EditUser } from 'routes/UserManagement/modules/FormUser';
 import Admin from 'routes/Admin/component/Admin';
 import axios from 'helpers/axios'
