@@ -99,14 +99,14 @@
                 top: 50%;
                 font-size: 40px;
                 @include ipadpro{
-                    top: 34%;
+                    top: 40%;
                 }
                 @include ipad{
-                    top: 37%;
+                    top: 50%;
                 }
                 @include xs{
                     font-size: 30px;
-                    top: 40%;
+                    top: 50%;
                 }           
             }
          
