@@ -3,8 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { fecthInformation,fetchDetail,fetchDetailShowTimes } from '../redux/actions'
 import Info from './Info'
 
-export default function Information() {
-    
+export default function Information() { 
     const dispatch = useDispatch()
     const logo = useSelector(state => state.logo.listLogo)
     const mahe = useSelector(state => state.logo.listDetail)

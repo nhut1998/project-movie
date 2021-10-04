@@ -128,10 +128,9 @@ export default function ListMovieShowTimes({ detail }) {
                         {
                             _.map(detail.heThongRapChieu, (info,index) => (
                                 <div key={index} className={`logo_item row 
-                            ${info.tenHeThongRap === tenLogo.tenHeThongRap ? 'active_theater' : ''}`}   >
-                                    <div className='logo_detail col-4'><img src={info.logo} alt=''
-                                        onClick={() => { hanldCumRap(info, info.tenHeThongRap, info.logo) }}
-                                    ></img>
+                            ${info.tenHeThongRap === tenLogo.tenHeThongRap ? 'active_theater' : ''}`} 
+                            onClick={() => { hanldCumRap(info, info.tenHeThongRap, info.logo) }} >
+                                    <div className='logo_detail col-4'><img src={info.logo} alt=''></img>
                                     </div>
                                     <div className=' detail_system  col-8'>
                                         <h6>{info.tenHeThongRap}</h6>

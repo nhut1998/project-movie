@@ -71,21 +71,21 @@
              @include xs{
                  padding-right: 12px;
                  margin-top: 20px;
-                 height: 240px;
+                 height: 260px;
              }
             .slick-list{
                 @include ipadpro{
                     height: 30vh;
                  } 
                  @include xs{
-                     height: 240px;
+                     height: 270px;
                  }
                  .slick-track{
                      @include ipadpro{
                      height: 30vh;
                  }
                  @include xs{
-                    height: 240px;
+                    height: 260px;
                 }
 
                  }
@@ -95,7 +95,7 @@
             }
             .slick-arrow{
                 position: absolute;
-                top: 35%;
+                top: 50%;
                 font-size: 40px;
                 @include ipadpro{
                     top: 34%;
@@ -147,7 +147,7 @@
                  height:25vh;
             }
             @include xs{
-                height: 250px;
+                height: 270px;
             }
             
            .list_fim{
@@ -166,7 +166,7 @@
                 margin-left: 15px;
             }
             @include xs{
-                height: 230px;
+                height: 235px;
                 width: 125px;
                 margin-left: 8px;
             }

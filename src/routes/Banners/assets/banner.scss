@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 650px;
+    height: 700px;
     width: 100%;
     position: relative;
     padding: 29px 50px;
@@ -85,8 +85,7 @@
     .list_slider{
         position: relative;
         z-index: 1;
-        margin-top: 60px;
-        top: 65%;
+        top: 75%;
         padding: 0px 130px;
         @include ipad{
            top: 50%;
@@ -122,7 +121,7 @@
                     background-repeat: no-repeat;
                     background-size: cover;
                     background-position: center;
-                    height: 15vh;
+                    height: 100px;
                     width: 100%;
                     border-radius: 15px;
                     box-shadow: 0px 0px 5px 5px #fff;
