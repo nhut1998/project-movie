@@ -2,17 +2,16 @@ import React from 'react'
 import { Tabs } from 'antd';
 import 'antd/dist/antd.css';
 import '../assets/listMovie.scss'
+import {useHistory} from 'react-router-dom'
 
 
 export default function ListMovie({ xemThem, movieListNext }) {
     const { TabPane } = Tabs;
-      
-
     function callback(key) {
         xemThem(key)
        
     }
-
+    const history = useHistory()
     return (
         <>
             <div className='page_tabs' name='ListMovie'>    
@@ -26,7 +25,9 @@ export default function ListMovie({ xemThem, movieListNext }) {
                                         <div className='items_picture'>
                                             <div className='picture'>
                                                 <img src={item.hinhAnh} alt=""></img>                           
-                                                <h5>{item.tenPhim}</h5> 
+                                                <h5>{item.tenPhim}</h5>
+                                                 <button className='btn-picture'onClick={()=> history.push(`/${item.maPhim}/chitietphim`)}>Chi tiết</button>
+                                                 <div className='overlow'></div>
                                             </div>                                 
                                         </div>                               
                                     </div>
@@ -43,7 +44,9 @@ export default function ListMovie({ xemThem, movieListNext }) {
                                         <div className=' items_picture'>
                                             <div className='picture'>
                                                 <img src={item.hinhAnh} alt=""></img>
-                                                <h5>{item.tenPhim}</h5> 
+                                                <h5>{item.tenPhim}</h5>
+                                                <button className='btn-picture'onClick={()=> history.push(`/${item.maPhim}/chitietphim`)}>Chi tiết</button>
+                                                 <div className='overlow'></div> 
 
                                             </div>
                                        

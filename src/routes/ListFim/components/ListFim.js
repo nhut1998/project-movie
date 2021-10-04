@@ -12,7 +12,6 @@ import '../../../../node_modules/react-modal-video/scss/modal-video.scss'
 import '../assets/listfim.scss'
 import { useHistory } from 'react-router-dom';
 import { useSelector } from 'react-redux'
-import swal from 'sweetalert'
 import Swal from 'sweetalert2'
 
 

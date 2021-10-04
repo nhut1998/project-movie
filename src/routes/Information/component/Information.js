@@ -9,6 +9,8 @@ export default function Information() {
     const logo = useSelector(state => state.logo.listLogo)
     const mahe = useSelector(state => state.logo.listDetail)
     const movieRap = useSelector(state => state.logo.listMovieShow)
+    const cum = useSelector(state => state.logo.theater)
+    
     useEffect(() => {
         dispatch(fecthInformation())
     }, [dispatch])
@@ -42,7 +44,9 @@ export default function Information() {
         <Info chonRap={chonRap} 
         logo={logo} mahe={mahe} 
         getMovie={getMovie}
-        movieRap={movieRap}/>
+        movieRap={movieRap}
+        cum={cum}
+        />
         </>
         
     )

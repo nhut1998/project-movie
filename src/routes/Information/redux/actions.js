@@ -54,10 +54,8 @@ export const fetchDetailShowTimes = (maHeThongRap ='BHDStar') => {
             url: `/api/QuanLyRap/LayThongTinLichChieuHeThongRap?maHeThongRap=${maHeThongRap}&maNhom=GP02`,
             method: 'GET'
         })
-            .then(res => {
-                
+            .then(res => {         
                 dispatch(actDetailShowTimes(res.data[0].lstCumRap))
-              
             })
             .catch(err=>{
                 console.log(err)

@@ -7,7 +7,7 @@
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 117vh;
+    height:840px;
     padding: 10px  70px 0px 120px;
     position: relative;
     @include ipadpro{
@@ -66,7 +66,7 @@
                     z-index: 1;
                     width: 100%;
                     padding: 0px 30px;
-                    height: 100vh;
+                    height: 700px;
                     @include ipadpro{
                      height: 28vh;
                      width: 100%;
@@ -81,7 +81,7 @@
                    .items_tabs{
                     margin-top: 20px;
                     width: 100%;
-                    height:40vh;
+                    height:320px;
                     @include ipadpro{
                         height: 20vh;
                         width: 40px;
@@ -89,11 +89,10 @@
                      }
                    
                        .items_picture{
-            
                            .picture img{
                               display: block;
                               width: 100%;
-                              height: 32vh; 
+                              height: 225px; 
                               border-top-left-radius: 20px;
                               border-top-right-radius: 20px;
                               @include ipadpro{
@@ -104,14 +103,35 @@
                                @include ipad{
                                    height: 15vh;
                                }
+                               
+                           }
+                           .picture:hover >  .overlow {
+                                width: 200%;
+                           }
+                           .overlow{
+                            content: '';
+                            display: block;
+                            background-color: rgba(0, 0, 0, 0.4);
+                            position: absolute;               
+                            top: 0;
+                            left: 0;
+                            width:0;
+                            height: 200%;
+                            transform: skew(35deg);
+                            transition: all .5s;                                
+                        }
+                           .picture:hover > .btn-picture{
+                               opacity: 1;
                            }
                            .picture{
                               width: 210px;
-                              height: 42vh;
+                              height: 290px;
                               padding:10px 4px 4px 10px;
                               box-shadow: 5px 5px 5px $white_color inset, 5px 5px 5px $white_color;
                               border-radius: 20px;
                               background-color: #000;
+                              position: relative;
+                              overflow: hidden;
                               @include ipadpro{
                                 height: 16.5vh;
                                 width: 150px;
@@ -124,7 +144,7 @@
                                   margin: 0px 15px 0px 0px;
                                  width:  130px;
                                  height: 22vh;
-                              }                  
+                              }
                               h5{
                                   color: $white_color;
                                   text-align: center;
@@ -136,6 +156,25 @@
                                   @include xs{
                                       font-size: 15px;
                                   } 
+                              }
+                              .btn-picture{
+                                  background-color: $white_color;
+                                  width: 170px;
+                                  height: 40px;
+                                  border: unset;
+                                  position: absolute;
+                                  bottom: 3%;
+                                  left: 10.5%;
+                                  z-index: 2;
+                                 box-shadow: 0;
+                                 opacity: 0;
+                                 transition: all 0.5s;
+                                 border-radius: 12px;
+                                 color: #000;
+                                 font-weight: bold;
+                                 font-size: 22px;
+                                 padding-bottom: 10px;
+                                 
                               }                       
                            }       
                
@@ -187,16 +226,10 @@
 .ant-tabs-tab:hover{
     color: $pink_color !important;
 }
-
 .ant-tabs-tab-btn:active{
     color: $pink_color;
     
 }
-.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
-    // box-shadow: 0px 0px 4px 4px $pink_color;
-   
-}
-
 .ant-tabs-ink-bar {
 background: unset;
 }

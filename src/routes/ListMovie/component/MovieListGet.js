@@ -5,10 +5,7 @@ import ListMovie from './ListMovie'
 
 export default function MovieListGet() {
     const dispatch = useDispatch()
-   
     const movieListNext = useSelector(state => state.movie.listMovieNext)
-    console.log(movieListNext)
-
     useEffect(() => {
         dispatch(fetchListMovieNext())
     }, [dispatch])

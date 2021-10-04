@@ -8,7 +8,6 @@ export const fetchBannerMovie = ()=>{
             method:'GET'
         })
         .then(res=>{
-            console.log(res.data)
             dispatch(actBannerMovie(res.data))
         })
         .catch(err=>{

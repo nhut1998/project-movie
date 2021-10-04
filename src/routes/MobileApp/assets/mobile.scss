@@ -2,7 +2,7 @@
 @import "assets/scss/mixins.scss";
 
 .mobile{
-    height: 83vh;
+    height: 570px;
     padding-top: 64px;
     background-image:url('../../../assets/img/212.jpg') ;
     background-repeat: no-repeat;
@@ -11,7 +11,6 @@
     position: relative;
     @include ipadpro{
         height: 46vh;
-        // height: 73vh;
         padding-top: 20px;
     }
     @include ipad{
@@ -59,7 +58,7 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                height: 30vh;
+                height: 160px;
                 margin-top: 40px;
                 @include ipadpro{
                     height:10vh;
@@ -121,7 +120,7 @@
             
            
             .app_mobile{
-                height: 65vh;
+                height: 450px;
                 padding-left: 0px !important;
                 padding-right: 20px !important;
                 @include ipadpro{
@@ -145,7 +144,7 @@
                     position: relative;
                     display: flex;
                     align-items: center;
-                    height: 70vh;
+                    height: 470px;
                     @include ipadpro{
                         height: 40vh;
                         width: 500px;
@@ -187,9 +186,8 @@
                          width: 100%;
                        }
                     .slick_app{
-                     height: 62vh;
+                     height: 450px;
                      width: 210px;
-                    //  margin-top: 10px;
                      padding: 5px;
                      position: absolute;
                      left: -3%;
@@ -215,7 +213,6 @@
                      }
                      .slick-slider{
                         border-radius: 5px;
-                     
                         @include ipadpro{
                             height: 34vh !important;  
                         }
@@ -227,11 +224,19 @@
                         position: relative;
                         height: 40vh
                        }
+                       .slick-list{
+                           @include ipadpro{
+                               height: 40vh;
+                           }
+                           @include ipad{
+                               height: unset;
+                           }
+                       }
                  
                     } 
                            
                     .slider_two{
-                         height: 68.5vh;
+                         height: 460px;
                          width: 240px;
                          border-radius: 15px;
                          @include xs{

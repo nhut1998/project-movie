@@ -101,8 +101,9 @@ export default function Header() {
                                     <PersonIcon className='icon_avt'/>
                                 <Link className="nav-link user_icon" > {user.accessToken ? user.hoTen : 'Tài khoản'}</Link>
                                 </div>
-                                <div className='triangle'></div>
+                                
                                 <div className= {`${user.accessToken?'items_in':'items_out'}`}>
+                                <div className='triangle'></div>
                                     <div className='user_btn'>
                                         {
                                             user.accessToken ?

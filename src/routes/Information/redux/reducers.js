@@ -1,12 +1,12 @@
-import { DETAIL, INFORMATION,LOGO_ITEM } from "./types";
+import { DETAIL, INFORMATION,LOGO_ITEM} from "./types";
 
 
 const initialState = {
     listLogo: [],
     listDetail:[],
     listMovieShow:[],
-
 }
+
 
 export default function infoReducers(state = initialState, { type, payload }) {
     

@@ -49,12 +49,11 @@ export default function BookingContainer() {
             }),history)
             Swal.fire({
                 title: 'Mua vé thành công',
-                text: "Bạn chưa có muôn xem thông tin đặt vé?",
+                text: "Bạn có muốn xem thông tin đặt vé?",
                 icon: 'success',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#C0C0C0',
-             
             }).then((result) => {
                 if (result.isConfirmed) {
                  history.push('/account#danhsachdatve')

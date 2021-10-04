@@ -9,7 +9,6 @@ import '../assets/banner.scss'
 
 export default function Banners({ bannerMovie }) {
     const history = useHistory()
-    console.log(bannerMovie)
     const [filmCinema, setFilmCinema] = useState('')
     const [infoFilm, setinfoFilm] = useState('')
 
