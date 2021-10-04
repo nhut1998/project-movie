@@ -16,7 +16,7 @@
         height: 19vh;
     }
     @include xs{
-        height: 19.5vh;
+       height: 170px;
     }
 }
 .list_movie{
@@ -34,7 +34,7 @@
         padding: 50px 50px;
     }
     @include xs{
-        height:48vh;
+        height:380px;
         padding:28px 30px 20px 25px;
     
     }
@@ -55,8 +55,7 @@
             }
             @include xs{
                 font-size: 20px;
-            }
-         
+            }         
         }
         .slick-slider{
             position: relative;
@@ -72,15 +71,22 @@
              @include xs{
                  padding-right: 12px;
                  margin-top: 20px;
+                 height: 240px;
              }
             .slick-list{
                 @include ipadpro{
                     height: 30vh;
                  } 
+                 @include xs{
+                     height: 240px;
+                 }
                  .slick-track{
                      @include ipadpro{
                      height: 30vh;
                  }
+                 @include xs{
+                    height: 240px;
+                }
 
                  }
             }
@@ -140,6 +146,9 @@
              @include ipad{
                  height:25vh;
             }
+            @include xs{
+                height: 250px;
+            }
             
            .list_fim{
             height: 380px;
@@ -157,7 +166,7 @@
                 margin-left: 15px;
             }
             @include xs{
-                height: 27vh;
+                height: 230px;
                 width: 125px;
                 margin-left: 8px;
             }

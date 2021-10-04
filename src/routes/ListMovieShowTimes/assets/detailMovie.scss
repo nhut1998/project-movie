@@ -38,31 +38,31 @@
         }
         .booked_detail{
             width: 500px;
-            height: 50vh;
+            height: 360px;
             margin-top: 15px;
             @include ipadpro{
                 height: 40vh;
             }
             @include xs{
-                height: 50vh;
+                height: 360px;
                 text-align: center;
                padding-left: 65px;
             }
             .item_picture img{
                 display: block;
                 width: 100%;
-                height: 42vh;
+                height: 295px;
                 border-radius: 7px;
                 @include ipadpro{
                 height: 25vh;
                 } 
                 @include xs{
-                  height: 35vh;  
+                    height: 300px;
                 }
             }
             .item_picture{
                 width: 230px;
-                height: 42vh;
+                height: 295px;
                 box-shadow: 0px 0px 6px 6px #fff;
                 border-radius: 7px;
                 @include ipadpro{
@@ -73,7 +73,7 @@
                 }
                 @include xs{
                     width: 230px;
-                   height: 35vh;
+                    height: 300px;
                 }
             }
             .item_trailer{
@@ -148,7 +148,7 @@
                 text-align: left;
             }
             @include xs{
-             
+             margin-top: 30px;
             }
             h5{
                 color: $yellow_color;
@@ -235,6 +235,9 @@
             @include ipadpro{
                font-size: 40px;
             }
+            @include xs{
+                font-size: 30px;
+            }
         }
         .theater{
             position: relative;
@@ -250,6 +253,7 @@
             }
             @include xs{
                 margin-left: 1px;
+                min-height: 100px;
             }
            
             .theater_logo{
@@ -260,6 +264,9 @@
                 @include ipadpro{
                     min-height: 40vh;
                 }
+                @include xs{
+                    min-height: 200px;
+                }
                 .logo_item img{
                     display: block;
                     width: 100%;
@@ -267,13 +274,16 @@
                 }
                 .logo_item{
                     min-width: 100%;
-                    height: 15vh;
+                    height: 80px;
                     border-bottom: 1px solid#FF00CC;
                     display: flex;
                     align-items: center;
                     cursor: pointer;
                     @include ipadpro{
                         height: 10vh;
+                    }
+                    @include xs{
+                      height: 85px;
                     }
              
                     .logo_detail{
@@ -312,7 +322,7 @@
                        
                         .date_item{
                             width: 540px;
-                            height: 8vh;
+                            height: 55px;
                             color:rgb(0,0,0);
                             overflow-y: auto;
                             margin-top: 20px;
@@ -321,7 +331,7 @@
                             }
                             @include xs{
                             width: 300px;
-                            height: 10vh;
+                            height: 80px;
                             overflow-y: auto;
                             margin-top: 20px;
 
@@ -360,8 +370,7 @@
                                     @include ipadpro{
                                         width: 90px;
                                         height: 90px;
-                                    }
-        
+                                    }  
                                 }
                                 .text_digital{
                                     border: 2px solid #FF00CC;
@@ -399,15 +408,17 @@
                                   font-size: 25px;
                                 }
                                 }
-                            }
-                           
+                            }                          
                         }
                         .dateTimes{
                             margin-top: 10px;
                             width: 100%;
-                            height: 45vh;
+                            height: 300px;
                             @include ipadpro{
                                 min-height: 20vh;
+                            }
+                            @include xs{
+                               min-height: 150px;
                             }
                             h5{
                                 color: #000;
@@ -420,7 +431,6 @@
                                 flex-wrap: wrap;
                                 border-bottom: 1px solid #FF00CC;
                                 padding-bottom: 20px;
-                                
                                     button{
                                         color: #000;
                                         width: 100px;

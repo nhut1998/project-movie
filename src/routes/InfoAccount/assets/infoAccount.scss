@@ -1,7 +1,7 @@
 @import "assets/scss/variables.scss";
 @import "assets/scss/mixins.scss";
 .form-account{
-    height: 50vh;
+    height: 400px;
     position: relative;
     h6{
         color: $white_color;
@@ -66,7 +66,7 @@
 // OnchangePassWord
 .ChangePassWord{
     // background-color: #000;
-    height: 50vh;
+    height: 400px;
     position: relative;
     h6{
         color: $white_color;
@@ -137,10 +137,11 @@
      }
     .ticker{
    
-        height: 72vh;
+        height:500px;
         color:rgb(0,0,0);
         overflow-y: auto;
         padding: 30px;
+        margin-top: 30px;
         @include ipadpro{
             height: 60vh;
             padding: 30px 0px;
@@ -156,7 +157,7 @@
         .tableTicket{
             color: #fff;
             thead{
-                height: 10vh;
+                height: 30px;
                 @include ipadpro{
                     height: 5vh;
                 }
@@ -167,7 +168,7 @@
                 tr{
                     border-top: 2px solid $pink_color;
                     border-bottom: 2px solid $pink_color;
-                    height: 10vh;
+                    height: 30px;
                     @include ipadpro{
                         height: 4vh;
                     }
@@ -177,7 +178,7 @@
                     }
                     th{
                         border: unset;
-                        height: 10vh;  
+                        height: 30px; 
                         padding: unset;
                         line-height: 10vh; 
                         @include ipadpro{
@@ -196,13 +197,13 @@
             tbody{
                 tr{
                     border-top: 2px solid $pink_color;
-                    height: 10vh;
+                    height: 30px;
                     @include xs{
                         height: 4vh;
                     }
                     td{
                         border: unset;
-                        height: 10vh;  
+                        height: 30px;
                         padding-top: 15px;
                        
                         @include xs{
@@ -230,9 +231,8 @@
 }
 // // container
 
-
 .combination{
-    height: 110vh;
+    height: 100%;
     padding: 70px 90px;
     position: relative;
     background-color:#fff;
@@ -251,7 +251,7 @@
         width: 100%;
         position: relative;
         z-index: 1;
-        height: 90vh;
+        height: 627px;
         background-color: rgb(0,0,0);
         @include ipadpro{
             height: 65vh;
@@ -263,7 +263,7 @@
            display: flex;
            flex-direction: row;
            width: 100%;
-           height: 90vh;
+           height: 627px;
            box-shadow: 0px 0px 7px 7px $pink_color;
            @include ipadpro{
                height: 65vh;
@@ -352,7 +352,7 @@
             .ant-tabs-content-holder{
                 flex: 5;
                 position: relative;
-                 height: 90vh;
+                 height: 640px;
                 width: 100%;
                 padding: 10px;
                 border-left: 2px solid $pink_color;
@@ -372,7 +372,6 @@
     }
 
 }
-
 
 .ant-tabs-top > .ant-tabs-nav::before{
     border: unset !important;

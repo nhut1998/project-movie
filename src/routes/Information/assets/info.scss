@@ -15,7 +15,7 @@
        height: 193vh;
    }
    @include xs{
-       height: 235vh;
+       height:112rem;
    }
 h2{
     color: $white_color;
@@ -56,13 +56,12 @@ h2{
                justify-content: unset;
                }
                @include xs{
-                   margin-left: 8px;
-                   margin-top: 30px;
+                   margin-top: 20px;
                    display: flex;
                    flex-direction: column;
                    flex-wrap: wrap;
-                   justify-content: space-between;
-                   height: 50vh;
+                   height: 300px;
+                 
                } 
             .logo_item{
                 width: 50px;
@@ -78,10 +77,14 @@ h2{
                 @include ipad{
                   padding: 35px;
                 }
+               
                 @include xs{
-                    width: 80px;
+                    width: 75px;
                     padding: 0px;
+                    margin-top: 20px;
+                   margin-left: 35px;
                 }
+                
                 p{
                     text-align: center;
                     color:$white_color;
@@ -92,6 +95,7 @@ h2{
                         font-size: 15px;
                         margin-top: 7px;
                         padding: 1px
+                        
                     };
                 }  
             }
@@ -102,6 +106,7 @@ h2{
                 box-shadow:  2px 3px 4px 3px $pink_color;
                 padding: 3px;
                 cursor: pointer;
+           
             }           
             .maHeThong{
                 opacity: 1;
