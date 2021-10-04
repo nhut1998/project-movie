@@ -8,7 +8,7 @@
     background-size: cover;
     width: 100%;
     height:840px;
-    padding: 10px  70px 0px 120px;
+    padding: 10px  60px 0px 60px;
     position: relative;
     @include ipadpro{
         height: 52vh;
@@ -83,6 +83,7 @@
                     margin-top: 20px;
                     width: 100%;
                     height:320px;
+                    position: relative;
                     @include ipadpro{
                         height: 20vh;
                         width: 40px;
@@ -93,6 +94,14 @@
                      }
                    
                        .items_picture{
+                           position: absolute;
+                           left: 50%;
+                           transform: translate(-50%);
+                           @include ipadpro{
+                            position: unset;
+                            left: unset;
+                            transform: unset;
+                           }
                            .picture img{
                               display: block;
                               width: 100%;

@@ -147,6 +147,7 @@
                     display: flex;
                     align-items: center;
                     height: 470px;
+                    width: 100%;
                     @include ipadpro{
                         height: 40vh;
                         width: 500px;
@@ -166,12 +167,13 @@
                         position: absolute;
                         z-index: 2;
                         top:-4%;
-                        left: -7%;
+                        left: 50%;
+                        transform: translateX(-50%);
                         padding: 19px;
-                        
                         @include ipadpro{
                             top: 9%;
                             left: -9%;
+                            transform: unset
                         }
                         @include ipad{
                             top: -3.5%;
@@ -192,14 +194,16 @@
                      width: 210px;
                      padding: 5px;
                      position: absolute;
-                     left: 5%;
+                     left: 50%;
+                     transform: translateX(-50%);
                      top:2%;
                      @include ipadpro{
                          height: 30vh;
                          padding: 5px;
                          position: absolute;
                          left: 4%;
-                         top:14%;                 
+                         top:14%;
+                         transform:unset              
                      }
                      @include ipad{
                          height: 50vh;

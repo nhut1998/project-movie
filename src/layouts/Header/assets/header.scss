@@ -237,9 +237,14 @@ a:hover{
 .navbar-nav .nav-link {
     color:rgb(255, 255, 255)!important   
 }
-.navbar-toggler .navbar-toggler-icon{
-    background-color:rgb(255, 255, 255)!important 
+.navbar-toggler{
+    border-radius:10px;
+    .navbar-toggler-icon{
+        background-color:rgb(255, 255, 255)!important;
+        border-radius:6px;
+    }
 }
+ 
 
 .navbar-collapse{
     .navbar-nav{
