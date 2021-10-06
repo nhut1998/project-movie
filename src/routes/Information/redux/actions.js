@@ -5,24 +5,18 @@ import axios from "helpers/axios";
 
 export const fecthInformation = () => {
     
-
     return dispatch => {
         axios({
             url: '/api/QuanLyRap/LayThongTinHeThongRap',
             method: 'GET'
         })
-            .then(res => {
-              
+            .then(res => {      
                 dispatch(actFetchList(res.data))
-
             })
             .catch(err => {
                 console.log(err)
             })
-
     }
-
-
 }
 export const actFetchList = listLogo => ({
     type: INFORMATION,

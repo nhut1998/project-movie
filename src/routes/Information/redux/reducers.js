@@ -6,8 +6,6 @@ const initialState = {
     listDetail:[],
     listMovieShow:[],
 }
-
-
 export default function infoReducers(state = initialState, { type, payload }) {
     
     switch (type) {
@@ -19,7 +17,6 @@ export default function infoReducers(state = initialState, { type, payload }) {
         }
         case LOGO_ITEM:{
             return {...state, listMovieShow:payload}
-
         }
         default:
             return state

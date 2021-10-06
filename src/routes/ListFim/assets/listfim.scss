@@ -241,6 +241,11 @@
                     @include ipad{
                         bottom: 10%;
                     }
+                    @include xs{
+                        width: 100%;
+                       height: 31px;
+
+                    }
                 }
 
             }

@@ -1,6 +1,5 @@
 import { BOOKING_SEAT, CHOOSING_SEND, SEND_BOOKING_INFO } from './types'
 import axios from 'helpers/axios'
-import Swal from 'sweetalert2'
 
 
 export const fecthBooking = (maLichChieu, loading) => {
@@ -11,7 +10,7 @@ export const fecthBooking = (maLichChieu, loading) => {
         })
             .then(res => {
                 dispatch(actFetchBooking(res.data))
-               
+
             })
             .catch(err => {
             })
@@ -30,23 +29,19 @@ export const actBookingInfo = (maGhe) => ({
     payload: maGhe
 })
 
-export const booking = (infoBooking,history) => {
+export const booking = (infoBooking, history) => {
     return dispatch => {
         axios({
             url: '/api/QuanLyDatVe/DatVe',
             method: 'POST',
             data: infoBooking
-
-
         })
             .then(res => {
                 dispatch(actBooking(res.data))
-
             })
             .catch(err => {
                 console.log(err)
             })
-
     }
 }
 export const actBooking = (infoBookingSeat) => ({

@@ -2,7 +2,6 @@ import React,{useCallback,useEffect} from 'react'
 import ListUser from '../conponent/ListUser'
 import { fetchInfoListUser,fetchDeleteUser } from '../redux/actions'
 import { useDispatch,useSelector } from 'react-redux'
-import Loading from '../../../../Loading/component/Loading'
 
 export default function ListUserContainer() {
   const dispatch = useDispatch()
@@ -15,7 +14,6 @@ export default function ListUserContainer() {
       },
       [dispatch],
   )
-
 
 const remove = useCallback(
     (xoa) => {

@@ -1,4 +1,6 @@
 @import "assets/scss/variables.scss";
+@import "assets/scss/mixins.scss";
+
 .loading{
   position: fixed; top: 0;
    left: 0;
@@ -11,9 +13,12 @@
     position: relative;
      left: 50%; 
      top: 50%;
-    width: 100px;
+     width: 100px;
      height: 100px;
-      margin: -75px 0 0 -75px;
+     margin: -75px 0 0 -75px;
+     @include xs{
+      left: 56%; 
+     }
    
   }
   

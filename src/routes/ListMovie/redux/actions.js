@@ -9,9 +9,7 @@ export const fetchListMovieNext =(id=2)=>{
       method:'GET'
     })
     .then(res=>{
-     console.log(res.data)
-      dispatch(actFectListMovieNext(res.data))
-     
+      dispatch(actFectListMovieNext(res.data)) 
     })
     .catch(err=>{
       console.log(err)

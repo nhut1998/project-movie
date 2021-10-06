@@ -21,8 +21,6 @@ export default function Booking({ listSeat, infoMovie, bookTicket, total, reserv
                                         <Seat ghe={ghe} />
                                         {(index + 1) % 16 === 0 && <br />}
                                     </React.Fragment>
-
-
                                 )
                             }
 
@@ -59,8 +57,6 @@ export default function Booking({ listSeat, infoMovie, bookTicket, total, reserv
                             <p className=''>Đã Đặt</p>
                         </div>
                     </div>
-
-
                 </div>
                 <div className='col-xl-5 col-lg-4 col-md-12 col-12 infoPicture'>
                     <div className='infoMovie row'>
@@ -81,12 +77,8 @@ export default function Booking({ listSeat, infoMovie, bookTicket, total, reserv
                                 <p className='text_cinema'>{infoMovie.tenRap}</p>
                                 <h6>{infoMovie.tenCumRap}</h6>
                                 <p>{infoMovie.diaChi}</p>
-
                             </div>
-
-
                         </div>
-
                     </div>
                     <div className='booked_seat'>
                        <div className='text_booking'>
@@ -98,18 +90,11 @@ export default function Booking({ listSeat, infoMovie, bookTicket, total, reserv
                         <div className='total_money'>
                             <div className='text_money'>
                             <h6>Tổng tiền:</h6>
-                            <p>{total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>
-                              
+                            <p>{total.toLocaleString('vi-VN', { style: 'currency', currency: 'VND' })}</p>                             
                             </div>
-                            <button onClick={bookTicket}>Đặt vé</button>
-                    
-                        </div>
-                          
-                    </div>
-                    
-                   
-
-
+                            <button onClick={bookTicket}>Đặt vé</button>                   
+                        </div>                         
+                    </div>                  
                 </div>
 
             </div>

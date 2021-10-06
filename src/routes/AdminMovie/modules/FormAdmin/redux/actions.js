@@ -26,33 +26,3 @@ export const actCreateMovie = (createMovie) =>({
     payload:createMovie
 })
 
-// export const fetchMovieEdit = (maPhim)=>{
-//     return dispatch =>{
-//         axios({
-//             url:`api/QuanLyPhim/LayThongTinPhim?MaPhim=${maPhim}`,
-//             method:'GET'
-//         })
-//         .then(res=>{
-//          dispatch(actMovieEdit(res.data))
-//         })
-//     }
-// }
-
-// export const actMovieEdit = (infoFim)=>({
-//    type:GET_EDITMOVIE,
-//    payload:infoFim
-// })
-
-// export const fetchEdit = (edit) =>{
-//     return dispatch => {
-//         axios({
-//             url:`api/QuanLyPhim/CapNhatPhimUpload`,
-//             method:"POST",
-//             data:edit
-//         })
-//         .then(res=>{
-//             console.log(res.data)
-//         })
-//     }
-   
-// }

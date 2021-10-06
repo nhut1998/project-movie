@@ -86,16 +86,13 @@ export default function ListFim({ listFilm }) {
                 icon: 'warning',
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#C0C0C0',
-             
+                cancelButtonColor: '#C0C0C0',            
             }).then((result) => {
                 if (result.isConfirmed) {
                     history.push('/login')
                 }
             })
-
         }
-
     }
     return (
         <div className='list_movie'>
@@ -116,7 +113,6 @@ export default function ListFim({ listFilm }) {
                                             <StarIcon className='star' />
                                             <StarIcon className='star' />
                                         </div>
-
                                     </div>
                                     <div className='btn_override'>
                                         <PlayCircleOutlineIcon className='icon_movie'
@@ -126,22 +122,15 @@ export default function ListFim({ listFilm }) {
                                 </div>
 
                             </div>
-
-
                         ))
                     }
-
-
                 </Slider>
-
             </div>
             <ModalVideo className='modal' channel='youtube' autoplay isOpen={isOpen} onClose={() => setOpen(false)} >
                 <iframe width="1920" height="1080"
                     src={modalTrailer} title='tenPhim'
                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
             </ModalVideo>
-
         </div>
     )
-
 }

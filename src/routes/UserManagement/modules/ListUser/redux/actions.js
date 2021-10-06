@@ -8,8 +8,7 @@ export const fetchInfoListUser = (tuKhoa)=>{
             url:`api/QuanLyNguoiDung/LayDanhSachNguoiDung?MaNhom=GP02${keyWord}`,
             method:'GET'
         })
-        .then(res=>{
-       
+        .then(res=>{     
             dispatch(actInfoListUser(res.data))
         })
     }
@@ -25,10 +24,8 @@ export const fetchDeleteUser = (xoa) => {
         axios({
             url: `api/QuanLyNguoiDung/XoaNguoiDung?TaiKhoan=${xoa}`,
             method: 'DELETE',
-
         })
-            .then(res => {
-               
+            .then(res => {           
             })
             .catch(err => {
                 console.log(err)

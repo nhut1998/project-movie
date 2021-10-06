@@ -34,7 +34,6 @@ export default function MobileApp() {
     const email = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(info)
 
     const hanldPromotion = () => {
-
         if (info === '') {
             swal({
                 title: 'Vui lòng nhập Email',
@@ -55,7 +54,6 @@ export default function MobileApp() {
             });
             setInfo('')
         }
-
     }
     return (
         <div className='mobile' name='Mobile'>

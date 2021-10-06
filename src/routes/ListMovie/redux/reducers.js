@@ -2,14 +2,10 @@
 import { LIST_MOVIE_NEXT } from "./types";
 
 const initialState ={
- 
   listMovieNext:{}
 }
-
- export default function movieList(state = initialState, { type, payload }){
-   
+ export default function movieList(state = initialState, { type, payload }){ 
   switch (type) {
-    
     case LIST_MOVIE_NEXT:{
       // if(payload.currentPage===1){
       
