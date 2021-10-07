@@ -97,15 +97,33 @@
             padding: 0px 40px 0px 35px;
             margin-top: 40px;
         }
-        .slick-slider{
+        .slick-slider{  
             @include ipad{
-                height: 10vh;
-                
+                height: 10vh;   
+            }
+            @include xs{
+                position: relative;
             }
             .slick-prev:before, .slick-next:before{
                 @include xs{
                     font-size: 16px;
                 }
+            }
+            .slick-prev{
+                @include xs{
+                    font-size: 16px;
+                    position: absolute;
+                    top: 55%;
+                    transform: translateY(-50%);
+                } 
+            }
+            .slick-next{
+                @include xs{
+                    font-size: 16px;
+                    position: absolute;
+                    top: 55%;
+                    transform: translateY(-50%);
+                } 
             }
             
         }

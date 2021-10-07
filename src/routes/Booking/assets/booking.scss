@@ -146,9 +146,16 @@
                         box-shadow:  2px 3px 4px 3px $pink_color;
                         max-width: 50px;
                         max-height: 50px;
+                        @include xs{
+                            max-width: 40px;
+                            max-height: 40px;  
+                        }
                         .icon_often{
                             font-size: 36px;
                             color: $yellow_color;
+                            @include xs{
+                                font-size: 28px;
+                            }
                         }
     
                     }
@@ -169,9 +176,16 @@
                         box-shadow:  2px 3px 4px 3px $pink_color;
                         max-width: 50px;
                         max-height: 50px;
+                        @include xs{
+                            max-width: 40px;
+                            max-height: 40px;  
+                        }
                         .icon_vip{
                             font-size: 36px;
-                            color:chartreuse ; 
+                            color:chartreuse ;
+                            @include xs{
+                                font-size: 28px;
+                            } 
                         }
                     }
                     p{
@@ -190,9 +204,16 @@
                         box-shadow:  2px 3px 4px 3px $pink_color;
                         max-width: 50px;
                         max-height: 50px;
+                        @include xs{
+                            max-width: 40px;
+                            max-height: 40px;  
+                        }
                         .icon_choose{
                             font-size: 36px;
-                            color: #fff; 
+                            color: #fff;
+                            @include xs{
+                                font-size: 28px;
+                            }
                         }
                     }
                     p{
@@ -211,9 +232,16 @@
                         box-shadow:  2px 3px 4px 3px $pink_color;
                         max-width: 50px;
                         max-height: 50px;
+                        @include xs{
+                            max-width: 40px;
+                            max-height: 40px;  
+                        }
                         .icon_booked{
                             font-size: 36px;
-                            color: #8B8989; 
+                            color: #8B8989;
+                            @include xs{
+                                font-size: 28px;
+                            } 
                         }
                     }
                     p{
@@ -222,10 +250,7 @@
                     }
                 }
 
-            }
-    
-           
-            
+            } 
         
         }
         .infoPicture{
@@ -236,7 +261,7 @@
             }
             @include xs{
                 height: 850px;
-                padding: 0px 22px 0px 24px;
+                padding: 0px 24px 0px 24px;
                 width: 100%;
           
             }
@@ -411,15 +436,14 @@
                        margin-left: 25px;
                    }
                    @include xs{
-                       width:336px;
-                       margin-left:12px;
+                       max-width: 337px;
+                       margin-left:10px;
                        margin-top: 20px;
                    }
                    padding: 10px;
                    .text_booking{
                      display: flex;
                      min-height: 30px;
-                    
                      .seat_content{
                        width: 150px;
                        height: 25px;

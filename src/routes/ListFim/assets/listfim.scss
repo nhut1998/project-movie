@@ -106,10 +106,9 @@
                 }
                 @include xs{
                     font-size: 30px;
-                    top: 50%;
+                    top: 45%;      
                 }           
-            }
-         
+            }      
             .slick-next{
                 right: -3%;
                 transition: all 0.25s;

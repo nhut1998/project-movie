@@ -437,7 +437,6 @@ h2{
                  }
                  .item_btn{
                      @include xs{
-                         padding-right: unset !important;
                          padding-left: unset !important;
                          width: 150px !important;
                      }

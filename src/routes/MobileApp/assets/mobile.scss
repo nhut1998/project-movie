@@ -32,7 +32,7 @@
             margin-top: 38px;
         }
         @include xs{
-            padding-left: 25px;
+            // padding-left: 25px;
             margin-right: 0px !important;
             height: 60rem;
         }
@@ -137,9 +137,7 @@
                 @include xs{
                     height: 50rem;
                     width:325px;
-                    margin-left: 12px;
-                  
-                    
+                    margin-left: 5px;    
                 }
               
               .item_app{
