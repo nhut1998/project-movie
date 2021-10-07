@@ -118,10 +118,8 @@ export default function ListMovieShowTimes({ detail }) {
 
                     </p>
                 </div>
-
             </div>
             <div className='calendar'>
-
                 <h4>CHỌN RẠP VÀ LỊCH CHIẾU </h4>
                 <div className='row theater'>
                     <div className='col-xl-4 col-lg-4 col-md-4 col-12 theater_logo'>
@@ -136,13 +134,11 @@ export default function ListMovieShowTimes({ detail }) {
                                         <h6>{info.tenHeThongRap}</h6>
                                     </div>
                                 </div>
-
                             ))
                         }
                     </div>
                     <div className='col-xl-8 col-lg-8 col-md-8 col-12 items_date'>
                         <div className='date_movie'>
-
                             <div className='date_item d-flex'>
                                 {
                                     _.map(detail.heThongRapChieu, (info,index) => {
@@ -167,12 +163,7 @@ export default function ListMovieShowTimes({ detail }) {
                                             )
                                         }
                                     }
-
-
-
                                     )
-
-
                                 }
                             </div>
                             <div className='system'>
@@ -199,21 +190,14 @@ export default function ListMovieShowTimes({ detail }) {
                                                 )
                                             }
                                         }
-
-
-
                                         )
-
-
                                     }
-
                                 </div>
                             </div>
                             <div className='dateTimes'>
                                 <h5>Giờ chiếu</h5>
                                 <div className='dateTime_item'>
                                     {
-
                                         _.map(detail.heThongRapChieu, info => {
                                             if (info.tenHeThongRap === tenLogo.tenHeThongRap) {
                                                 return (
@@ -231,7 +215,6 @@ export default function ListMovieShowTimes({ detail }) {
 
 
                                                                 })
-
 
                                                             )
                                                         }

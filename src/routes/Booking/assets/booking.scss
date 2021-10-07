@@ -66,6 +66,7 @@
                     align-items: center;
                     text-align: center;
                     position: relative;
+                    cursor: pointer;
                     @include ipadpro{
                         max-width: 36px;
                         max-height: 36px;
@@ -261,7 +262,7 @@
             }
             @include xs{
                 height: 850px;
-                padding: 0px 24px 0px 24px;
+                padding: 0px 17px 0px 17px;
                 width: 100%;
           
             }
@@ -436,9 +437,9 @@
                        margin-left: 25px;
                    }
                    @include xs{
-                       max-width: 337px;
-                       margin-left:10px;
-                       margin-top: 20px;
+                        width: 100%;
+                        margin-left: unset;
+                        margin-top: 20px;
                    }
                    padding: 10px;
                    .text_booking{
@@ -469,8 +470,7 @@
                       }
                    
                    }
-                   .total_money{ 
-                       
+                   .total_money{         
                        .text_money{
                            display: flex;
                            align-items: center;

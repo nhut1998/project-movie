@@ -9,8 +9,6 @@ export default function FilmContainer() {
     useEffect(() => {
         dispatch(fetchSlick())
     }, [dispatch])
-
-
     return (
         <>
             <ListFim listFilm={listFilm} />

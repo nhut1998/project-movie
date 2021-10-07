@@ -14,10 +14,7 @@ export const fetchListMovieNext =(id=2)=>{
     .catch(err=>{
       console.log(err)
     })
-  }
-
-
-  
+  } 
 }
 export const actFectListMovieNext=(listMovieNext)=>({
   type:LIST_MOVIE_NEXT ,
