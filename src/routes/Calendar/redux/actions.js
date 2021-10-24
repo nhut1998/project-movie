@@ -13,8 +13,6 @@ export const fetchTheater =(maHeThong)=>{
  
         })
     }
-
-
 }
 
 export const actFetchTheater = (listSystemTheater) => ({

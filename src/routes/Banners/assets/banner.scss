@@ -3,277 +3,135 @@
 
 
 .banner{
-    background-image:url('../../../assets/img/b12.jpg') ;
+    background-image:url('../../../assets/img/a2.jpg') ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 700px;
+    height: 650px;
     width: 100%;
     position: relative;
-    padding: 29px 50px;
     @include ipadpro{
     height: 42vh;
     width: 100%;
     }
     @include ipad{
-    padding: 29px 28px;
     height: 46vh;
     }
     @include xs{
-        padding: 29px 18px;
         height: 330px;
     }
-    .item_banner{
+    .items{
         width: 100%;
-        height: 45px;
-        display: flex;
-        box-shadow: 3px 3px 3px #000 inset, 3px 3px 3px #000;
-        border-radius: 10px;
-        padding-right: 10px;
-        @include xs{
-            display: flex;
-            flex-wrap: wrap;
-            width: 140px;
-            box-shadow: unset;
-            padding: unset;
-        }
-        .form-group{
-            width: 100%;
-           @include xs{
-            box-shadow: 3px 3px 3px #000 inset, 3px 3px 3px #000;
-            border-radius: 15px;
-            height: 28px;
-           }
-           .form-control:hover{
-             color: $pink_color;  
-           }
-            .form-control{
-                border: none;
-                background-color: unset;
-                min-height: 10px;
-                position: relative;
-                z-index: 2;
-                color: #fff;
-                font-weight: bold;
-                margin-top: 3px;
-                cursor: pointer;
-                @include xs{
-                    height: 28px;
-                    width: 128px;
-                    font-size: 13px;
-                   margin-top: -2px;
-                }
-                option{
-                    color: #fff;
-                    background-color: black;
-                    @include ipadpro {
-                        width: 100px;
-                        font-size: 13px;                                   
-                    }             
-                }
-            }
-            select{
-                @include ipadpro {     
-                } 
-            }
-            .form-control:focus{
-                outline: none;
-                box-shadow: unset;
-            }
-        }
-    }
-    .list_slider{
-        position: relative;
-        z-index: 1;
-        top: 75%;
-        padding: 0px 130px;
+        padding: 0px 100px;
+        position: absolute;
+        bottom: -5%;
+        left:50%;
+        transform: translateX(-50%);
+        z-index: 2;
         @include ipad{
-           top: 50%;
-           padding: 0px 80px;
-           height: 15vh;
-           margin-top: 85px;
+        padding: 0px 50px;
         }
         @include xs{
-            padding: 0px 40px 0px 35px;
-            margin-top: 40px;
+         padding: 0px 3px 0px 0px;
+         bottom: 0%;
         }
-        .slick-slider{  
+       
+        .item_banner{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+            background-color: #fff;
+            border-radius: 10px;
+            padding-top: 10px;
             @include ipad{
-                height: 10vh;   
+                height: 70px; 
             }
             @include xs{
-                position: relative;
+                height: 52px;
             }
-            .slick-prev:before, .slick-next:before{
+            .book-seat{
+               position: relative;
+               height: 70px;
+                button{
+                 position: absolute;
+                 left: 50%;
+                 top:50%;
+                 transform: translate(-35%,-40%);
+                 border: unset;
+                 font-weight: bold;
+                 background-color: #666666;
+                 width: 145px;
+                 height: 40px;
+                 border-radius: 10px;
+                 &:hover{
+                     color: $pink_color;
+                 }
+                 @include ipadpro {
+                    position: absolute;
+                    left: 50%;
+                    top:50%;
+                    transform: translate(-50%,-40%);                                           
+                } 
+                @include ipad{
+                 width: 120px;
+                 height: 40px;
+                 position: absolute;
+                 left: 50%;
+                 top:50%;
+                 transform: translate(-55%,-40%);  
+                }
                 @include xs{
-                    font-size: 16px;
+                 width: 50px;
+                 height: 30px;
+                 font-size: 11px;
+                 line-height: 10px;
+                 position: absolute;
+                 left: 50%;
+                 top:50%;
+                 transform: translate(-55%,-40%); 
+                }
                 }
             }
-            .slick-prev{
-                @include xs{
-                    font-size: 16px;
-                    position: absolute;
-                    top: 55%;
-                    transform: translateY(-50%);
-                } 
-            }
-            .slick-next{
-                @include xs{
-                    font-size: 16px;
-                    position: absolute;
-                    top: 55%;
-                    transform: translateY(-50%);
-                } 
-            }
-            
-        }
-        .slider_item{
-            @include ipad{
-                height: 10vh;
-            }
-            .items{
-                padding: 20px;
-                
-                .slider_one{
-                    background-image:url('../../../assets/img/124.jfif') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 0px 0px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
+            .form-group{
+                width: 100%;
+               .form-control:hover{
+                 color: $pink_color;  
+               }
+                .form-control{
+                    border: none;
+                    background-color: unset;
+                    min-height: 10px;
+                    position: relative;
+                    z-index: 2;
+                    color: #000;
+                    font-weight: bold;
+                    margin-top: 3px;
+                    cursor: pointer;
+                    option{
+                        color: #fff;
+                        background-color: black;          
                     }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                     }
+                    @include xs{
+                        font-size: 11px;
+                        width:80px;
+                        padding: 0px 2px;
+                    }
                     
-    
                 }
-                .slider_two{
-                    background-image:url('../../../assets/img/125.jfif') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 0px 0px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
-                    }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                    }
-    
-                }
-                .slider_three{
-                    background-image:url('../../../assets/img/127.jfif') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 0px 0px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
-                    }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                    }
-    
-                }
-                .slider_four{
-                    background-image:url('../../../assets/img/128.jfif') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 0px 0px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
-                    }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                    }
-    
-                }
-                .slider_five{
-                    background-image:url('../../../assets/img/anh-5.jpg') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 1px 1px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
-                    }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                    }
-    
-                }
-                .slider_six{
-                    background-image:url('../../../assets/img/110.jpg') ;
-                    background-repeat: no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                    height: 100px;
-                    width: 100%;
-                    border-radius: 15px;
-                    box-shadow: 1px 1px 5px 5px #fff;
-                    @include ipadpro{
-                        height: 5vh;
-                        width: 100%;
-                    }
-                    @include ipad{
-                        height: 6vh;
-                        width: 100%;
-                     }
-                     @include xs{
-                        height: 6vh;
-                    }
-    
+                .form-control:focus{
+                    outline: none;
+                    box-shadow: unset;
                 }
             }
         }
     }
+   
 }
 .banner::after{
     content: '';
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100%;
     position: absolute;

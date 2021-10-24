@@ -1,15 +1,16 @@
 import React, { useState } from 'react'
 import moment from 'moment';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import _ from 'lodash'
 import { useHistory } from 'react-router';
+import { useSelector } from 'react-redux'
+import Swal from 'sweetalert2'
 import '../assets/banner.scss'
 
 export default function Banners({ bannerMovie }) {
     const history = useHistory()
+    const user = useSelector(state => state.user.credential)
     const [filmCinema, setFilmCinema] = useState('')
+    const [malich, setMaLich] = useState('')
     const [infoFilm, setinfoFilm] = useState('')
 
     const [filmTheater, setFilmTheater] = useState('')
@@ -26,56 +27,32 @@ export default function Banners({ bannerMovie }) {
     const hanldDtae = (date) => {
         setDateFilm(date)
     }
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        autoplay: true,
-        slidesToShow: 5,
-        slidesToScroll: 1,
-        arrows: true,
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    autoplay: true,
-                    slidesToShow: 5,
-                    slidesToScroll: 1,
-                    arrows: true
+    const hanldML = (ma)=>{
+        setMaLich(ma)
+
+    }
+    const muaVe = () => {
+        if (user.accessToken) {
+            history.push(`/${malich}/booking`)
+        }
+        else {
+            Swal.fire({
+                title: 'Mua vé không thành công?',
+                text: "Bạn chưa có tài khoản đăng nhập ?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#C0C0C0',            
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    history.push('/login')
                 }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    autoplay: true,
-                    slidesToShow: 4,
-                    slidesToScroll: 1,
-                    arrows: true
-                }
-            },
-            {
-                breakpoint: 400,
-                settings: {
-                    dots: false,
-                    infinite: true,
-                    speed: 500,
-                    autoplay: true,
-                    slidesToShow: 3,
-                    slidesToScroll: 1,
-                    arrows: true
-                }
-            }
-        ]
-    };
+            })
+        }
+    }
     return (
         <div className='banner'>
-            <div>
+            <div  className='items items-none'>
                 <div className='item_banner'>
 
                     <div className="form-group">
@@ -137,8 +114,8 @@ export default function Banners({ bannerMovie }) {
                         </select>
 
                     </div>
-                    <div className="form-group">
-                        <select className="form-control" onChange={(e) => history.push(`/${e.target.value}/booking`)}>
+                    <div className="form-group ">
+                        <select className="form-control" onChange={(e)=>hanldML(e.target.value)} >
                             <option selected className='item_option selected'>Giờ chiếu</option>
                             {
                                 _.map(bannerMovie, times => (
@@ -164,40 +141,16 @@ export default function Banners({ bannerMovie }) {
                         </select>
 
                     </div>
+                    <div className="form-group book-seat">
+                        {
+                            malich===''?<button>Mua vé ngay</button>:<button onClick={() =>muaVe()}>Mua vé ngay</button>
+                        }
+                        
+
+                    </div>
                 </div>
             </div>
-            <div className='list_slider'>
-                <div className='slider_item'>
-
-                    <Slider {...settings}>
-                        <div className='items'>
-                            <div className='slider_one' >
-                            </div>
-                        </div>
-                        <div className='items'>
-                            <div className='slider_two' >
-                            </div>
-                        </div>
-                        <div className='items'>
-                            <div className='slider_three' >
-                            </div>
-                        </div>
-                        <div className='items'>
-                            <div className='slider_four' >
-                            </div>
-                        </div>
-                        <div className='items'>
-                            <div className='slider_five' >
-                            </div>
-                        </div>
-                        <div className='items'>
-                            <div className='slider_six' >
-                            </div>
-                        </div>
-                    </Slider>
-                </div>
-
-            </div>
+           
         </div>
     )
 }

@@ -77,41 +77,41 @@ export default function MobileApp() {
                             <div className='slick_app'>
                                 <Slider {...settings}>
                                     <div className='slider_two' >
-                                        <img src={ap1} width='198' height='415'></img>
+                                        <img src={ap1} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap2} width='198' height='415'></img>
+                                        <img src={ap2} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap3} width='198' height='415'></img>
+                                        <img src={ap3} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap4} width='198' height='415'></img>
+                                        <img src={ap4} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap5} width='198' height='415'></img>
+                                        <img src={ap5} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap6} width='198' height='415'></img>
+                                        <img src={ap6} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap7} width='198' height='415'></img>
+                                        <img src={ap7} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap9} width='198' height='415'></img>
+                                        <img src={ap9} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap10} width='198' height='415'></img>
+                                        <img src={ap10} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap11} width='198' height='415'></img>
+                                        <img src={ap11} width='198' height='415' alt=''></img>
                                     </div>
                                     <div className='slider_two' >
-                                        <img src={ap12} width='198' height='415'></img>
+                                        <img src={ap12} width='198' height='415' alt=''></img>
                                     </div>
                                 </Slider>
                             </div>
-                            <div className='iphone'><img src={ip3}></img></div>
+                            <div className='iphone'><img src={ip3} alt=''></img></div>
                         </div>
                         <div className='item_application col-xl-8 col-lg-7 col-md-8 col-12'>
                             <div className='item_content'>
@@ -119,8 +119,8 @@ export default function MobileApp() {
                                 <p>Không chỉ đặt vé, bạn còn có thể bình luận phim, chấm điểm rạp và đổi quà hấp dẫn.</p>
                                 <p>Tải ngay ứng dụng:</p>
                                 <div className='application_down'>
-                                    <img src={googlePlay} width='75' height='80'></img>
-                                    <img src={appStore} width='75' height='80'></img>
+                                    <img src={googlePlay} width='75' height='80' alt=''></img>
+                                    <img src={appStore} width='75' height='80' alt=''></img>
 
                                 </div>
                             </div>

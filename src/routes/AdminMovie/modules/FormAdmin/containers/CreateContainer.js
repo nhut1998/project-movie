@@ -42,7 +42,6 @@ export  function Create() {
         setPicture(URL.createObjectURL(e.target.files[0]))
         setDataMovie({...dataMovie, hinhAnh:e.target.files[0]})
     }
-    
     return (
         <>
          <FormAdmin
@@ -51,7 +50,6 @@ export  function Create() {
          picture={picture}
          dataMovie={dataMovie}
         hanldPicture={hanldPicture}
-        //  setPicture={newPicture=>{setPicture({...picture,...newPicture})}}
          setDataMovie= {newData=>{setDataMovie({...dataMovie,...newData})}}
          submitData={submitData}
          />
